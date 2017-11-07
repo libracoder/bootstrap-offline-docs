@@ -5,4 +5,7 @@ Bootstrap 4 is new so many developers are yet to fully understand its inner work
 
 Please dont forget to star this project it if you find it helpful
 
+Just download the project zip or pull  and click on index.html. 
+Viola you are ready to go
+
 Thank you
