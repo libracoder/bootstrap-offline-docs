@@ -7,7 +7,6 @@ Just download the unzip and click on index.html.
 Viola! Happy Coding !!!
 
 Thank you
-
 ![alt text](http://getbootstrap.com/assets/img/bootstrap-stack.png)
 
 
