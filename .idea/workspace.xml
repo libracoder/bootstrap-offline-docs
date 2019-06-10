@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e42cc7e-d7b9-4e22-9df1-b10b9386209e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/alerts/alerts.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2318">
+              <caret line="61" column="263" selection-start-line="61" selection-start-column="263" selection-end-line="61" selection-end-column="263" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/badge/badge.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23180">
+              <caret line="608" selection-start-line="608" selection-end-line="608" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="215" column="8" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="8" />
+              <folding>
+                <element signature="e#17098#17102#0" expanded="true" />
+                <element signature="e#17523#17527#1" expanded="true" />
+                <element signature="e#17686#17690#0" expanded="true" />
+                <element signature="e#18024#18028#0" expanded="true" />
+                <element signature="e#18028#18032#0" expanded="true" />
+                <element signature="e#18039#18043#0" expanded="true" />
+                <element signature="e#18068#18072#0" expanded="true" />
+                <element signature="e#18431#18435#0" expanded="true" />
+                <element signature="e#18435#18439#0" expanded="true" />
+                <element signature="e#18446#18450#0" expanded="true" />
+                <element signature="e#18475#18479#0" expanded="true" />
+                <element signature="e#18835#18839#0" expanded="true" />
+                <element signature="e#18839#18843#0" expanded="true" />
+                <element signature="e#18850#18854#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/getting-started/introduction/introduction_2.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; crossorigin=&quot;anonymous&quot;</find>
+      <find>integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;</find>
+      <find>integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot; crossorigin=&quot;anonymous&quot;</find>
+      <find>.min</find>
+      <find>&lt;script async src=&quot;../../../../www.google-analytics.com/analytics.js&quot;&gt;&lt;/script&gt;</find>
+      <find>analy</find>
+      <find>docs/4.3</find>
+      <find>getbootstrap_default.htm</find>
+      <find>&quot;../../../../getbootstrap_default.htm&quot;</find>
+      <find>getb</find>
+      <find>index.htm</find>
+      <find>&lt;script async src=&quot;https://www.google-analytics.com/analytics.js&quot;&gt;&lt;/script&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.</replace>
+      <replace>&quot;../../index.html&quot;</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/components/badge/badge.htm" />
+        <option value="$PROJECT_DIR$/index.htm" />
+        <option value="$PROJECT_DIR$/components/alerts/alerts.htm" />
+        <option value="$PROJECT_DIR$/getting-started/introduction/introduction_2.htm" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="33" />
+    <option name="width" value="947" />
+    <option name="height" value="560" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="4.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4.3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="4.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4.3" type="462c0819:PsiDirectoryNode" />
+              <item name="getting-started" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="4.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4.3" type="462c0819:PsiDirectoryNode" />
+              <item name="getting-started" type="462c0819:PsiDirectoryNode" />
+              <item name="introduction" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="9.11.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e42cc7e-d7b9-4e22-9df1-b10b9386209e" name="Default Changelist" comment="" />
+      <created>1560028296202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560028296202</updated>
+      <workItem from="1560028297388" duration="2102000" />
+      <workItem from="1560157213090" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2277000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="33" width="1920" height="994" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25375536" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Quokka" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" />
+      <window_info anchor="bottom" id="Quokka" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Key Promoter X" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/4.3.htm" />
+    <entry file="file://$PROJECT_DIR$/components/alerts/alerts.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2318">
+          <caret line="61" column="263" selection-start-line="61" selection-start-column="263" selection-end-line="61" selection-end-column="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/badge/badge.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23180">
+          <caret line="608" selection-start-line="608" selection-end-line="608" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="215" column="8" lean-forward="true" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="8" />
+          <folding>
+            <element signature="e#17098#17102#0" expanded="true" />
+            <element signature="e#17523#17527#1" expanded="true" />
+            <element signature="e#17686#17690#0" expanded="true" />
+            <element signature="e#18024#18028#0" expanded="true" />
+            <element signature="e#18028#18032#0" expanded="true" />
+            <element signature="e#18039#18043#0" expanded="true" />
+            <element signature="e#18068#18072#0" expanded="true" />
+            <element signature="e#18431#18435#0" expanded="true" />
+            <element signature="e#18435#18439#0" expanded="true" />
+            <element signature="e#18446#18450#0" expanded="true" />
+            <element signature="e#18475#18479#0" expanded="true" />
+            <element signature="e#18835#18839#0" expanded="true" />
+            <element signature="e#18839#18843#0" expanded="true" />
+            <element signature="e#18850#18854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getting-started/introduction/introduction_2.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
