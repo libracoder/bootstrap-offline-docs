@@ -3,18 +3,18 @@
   "short_name": "Bootstrap",
   "icons": [
     {
-      "src": "../../assets/img/favicons/android-chrome-192x192.png",
+      "src": "android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "../../assets/img/favicons/android-chrome-512x512.png",
+      "src": "android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "start_url": "/?utm_source=a2hs",
-  "theme_color": "#563d7c",
-  "background_color": "#563d7c",
+  "theme_color": "#7952b3",
+  "background_color": "#7952b3",
   "display": "standalone"
 }

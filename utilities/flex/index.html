@@ -1,35 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<!-- Mirrored from getbootstrap.com/docs/5.1/utilities/flex/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Feb 2022 18:03:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Jekyll v3.8.6">
+<meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
-<meta name="docsearch:version" content="4.4">
+<meta name="docsearch:version" content="5.1">
 
-<title>Flex · Bootstrap</title>
+<title>Flex · Bootstrap v5.1</title>
 
-<link rel="canonical" href="../../utilities/flex/">
+<link rel="canonical" href="index.html">
+
+
 
 <!-- Bootstrap core CSS -->
 <link href="../../dist/css/bootstrap.min.css" rel="stylesheet" >
-<!-- Documentation extras -->
 
+<link href="../../assets/css/docs.css" rel="stylesheet">
 
-
-
-<link href="../../assets/css/docs.min.css" rel="stylesheet"><!-- Favicons -->
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="../../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="../../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="../../assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="../../assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
 <link rel="icon" href="../../assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="../../assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+<meta name="theme-color" content="#7952b3">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary">
@@ -37,493 +39,388 @@
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Flex">
 <meta name="twitter:description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
-<meta name="twitter:image" content="../../assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:image" content="../../assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="../../utilities/flex/">
+<meta property="og:url" content="index.html">
 <meta property="og:title" content="Flex">
 <meta property="og:description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="http://getbootstrap.com../../assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="../../assets/brand/bootstrap-social.png">
+<meta property="og:type" content="article">
+<meta property="og:image" content="../../assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
 
 
 
   </head>
   <body>
-    <a class="skippy sr-only sr-only-focusable" href="#content">
-  <span class="skippy-text">Skip to main content</span>
-</a>
-
-
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-   <a class="navbar-brand mr-0 mr-md-2" href="../../index.html" aria-label="Bootstrap"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="d-block" viewBox="0 0 612 612" role="img" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg></a>
-
-  <div class="navbar-nav-scroll">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item">
-        <a class="nav-link " href="../../index.html" >Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="../../getting-started/introduction/index.html" >Documentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="../../examples/index.html" >Examples</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://icons.getbootstrap.com/">Icons</a>
-      </li>
-
-    </ul>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
   </div>
+</div>
 
-  <ul class="navbar-nav ml-md-auto">
-     <li class="nav-item">
-      <a class="nav-link btn-outline-warning text-warning namelink" id="namelink">
-        <strong onclick="window.open('https://www.buymeacoffee.com/libracoder');
-        "> Your support is my biggest encouragement! - Libracoder</strong> </a>
-       <style type="text/css">
-         .namelink,#namelink {
-           color: #ffc107 !important;
-           cursor: pointer;
-         }
-       </style>
-    </li><li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        v4.4
-      </a>
-      <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
-        <a class="dropdown-item active" href="../../">Latest (4.4.x)</a>
-        <a class="dropdown-item" href="/docs/4.3/">v4.3.1</a>
-        <a class="dropdown-item" href="/docs/4.2/">v4.2.1</a>
-        <a class="dropdown-item" href="/docs/4.0/">v4.0.0</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
-        <a class="dropdown-item" href="/docs/3.4/">v3.4.1</a>
-        <a class="dropdown-item" href="/docs/3.3/">v3.3.7</a>
-        <a class="dropdown-item" href="/2.3.2/">v2.3.2</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/docs/versions/">All versions</a>
-      </div>
-    </li>
 
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img" focusable="false"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img" focusable="false"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener" aria-label="Slack"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 512" role="img" focusable="false"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://opencollective.com/bootstrap/" target="_blank" rel="noopener" aria-label="Open Collective"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img" focusable="false"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg></a>
-    </li>
-  </ul>
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+    <a class="navbar-brand p-0 me-2" href="../../../../index.html" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+    </a>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="../../getting-started/download/index.html">Download</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="../../../../index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 active" aria-current="true" href="../../getting-started/introduction/index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="../../examples/index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        </li>
+      </ul>
+
+      <hr class="d-md-none text-white-50">
+
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://github.com/twbs" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+            <small class="d-md-none ms-2">GitHub</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
+            <small class="d-md-none ms-2">Twitter</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 512" role="img"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg>
+            <small class="d-md-none ms-2">Slack</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg>
+            <small class="d-md-none ms-2">Open Collective</small>
+          </a>
+        </li>
+      </ul>
+
+      <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3" href="../../getting-started/download/index.html">Download</a>
+    </div>
+  </nav>
 </header>
 
 
-    <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
-        <div class="col-md-3 col-xl-2 bd-sidebar">
-          <form role="search" class="bd-search d-flex align-items-center">
-  <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.4">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg></button>
-</form>
 
-<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation"><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../getting-started/introduction/index.html">
-        Getting started
-      </a>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../getting-started/introduction/index.html">
-              Introduction
-            </a>
-          </li><li>
-            <a href="../../getting-started/download/index.html">
-              Download
-            </a>
-          </li><li>
-            <a href="../../getting-started/contents/index.html">
-              Contents
-            </a>
-          </li><li>
-            <a href="../../getting-started/browsers-devices/index.html">
-              Browsers & devices
-            </a>
-          </li><li>
-            <a href="../../getting-started/javascript/index.html">
-              JavaScript
-            </a>
-          </li><li>
-            <a href="../../getting-started/theming/index.html">
-              Theming
-            </a>
-          </li><li>
-            <a href="../../getting-started/build-tools/index.html">
-              Build tools
-            </a>
-          </li><li>
-            <a href="../../getting-started/webpack/index.html">
-              Webpack
-            </a>
-          </li><li>
-            <a href="../../getting-started/accessibility/index.html">
-              Accessibility
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../layout/overview/index.html">
-        Layout
-      </a>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../layout/overview/index.html">
-              Overview
-            </a>
-          </li><li>
-            <a href="../../layout/grid/index.html">
-              Grid
-            </a>
-          </li><li>
-            <a href="../../layout/utilities-for-layout/index.html">
-              Utilities for layout
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../content/reboot/index.html">
-        Content
-      </a>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../content/reboot/index.html">
-              Reboot
-            </a>
-          </li><li>
-            <a href="../../content/typography/index.html">
-              Typography
-            </a>
-          </li><li>
-            <a href="../../content/code/index.html">
-              Code
-            </a>
-          </li><li>
-            <a href="../../content/images/index.html">
-              Images
-            </a>
-          </li><li>
-            <a href="../../content/tables/index.html">
-              Tables
-            </a>
-          </li><li>
-            <a href="../../content/figures/index.html">
-              Figures
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../components/alerts/index.html">
-        Components
-      </a>
+  <div class="container-xxl my-md-4 bd-layout">
+    <aside class="bd-sidebar">
+      <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
+          Getting started
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../components/alerts/index.html">
-              Alerts
-            </a>
-          </li><li>
-            <a href="../../components/badge/index.html">
-              Badge
-            </a>
-          </li><li>
-            <a href="../../components/breadcrumb/index.html">
-              Breadcrumb
-            </a>
-          </li><li>
-            <a href="../../components/buttons/index.html">
-              Buttons
-            </a>
-          </li><li>
-            <a href="../../components/button-group/index.html">
-              Button group
-            </a>
-          </li><li>
-            <a href="../../components/card/index.html">
-              Card
-            </a>
-          </li><li>
-            <a href="../../components/carousel/index.html">
-              Carousel
-            </a>
-          </li><li>
-            <a href="../../components/collapse/index.html">
-              Collapse
-            </a>
-          </li><li>
-            <a href="../../components/dropdowns/index.html">
-              Dropdowns
-            </a>
-          </li><li>
-            <a href="../../components/forms/index.html">
-              Forms
-            </a>
-          </li><li>
-            <a href="../../components/input-group/index.html">
-              Input group
-            </a>
-          </li><li>
-            <a href="../../components/jumbotron/index.html">
-              Jumbotron
-            </a>
-          </li><li>
-            <a href="../../components/list-group/index.html">
-              List group
-            </a>
-          </li><li>
-            <a href="../../components/media-object/index.html">
-              Media object
-            </a>
-          </li><li>
-            <a href="../../components/modal/index.html">
-              Modal
-            </a>
-          </li><li>
-            <a href="../../components/navs/index.html">
-              Navs
-            </a>
-          </li><li>
-            <a href="../../components/navbar/index.html">
-              Navbar
-            </a>
-          </li><li>
-            <a href="../../components/pagination/index.html">
-              Pagination
-            </a>
-          </li><li>
-            <a href="../../components/popovers/index.html">
-              Popovers
-            </a>
-          </li><li>
-            <a href="../../components/progress/index.html">
-              Progress
-            </a>
-          </li><li>
-            <a href="../../components/scrollspy/index.html">
-              Scrollspy
-            </a>
-          </li><li>
-            <a href="../../components/spinners/index.html">
-              Spinners
-            </a>
-          </li><li>
-            <a href="../../components/toasts/index.html">
-              Toasts
-            </a>
-          </li><li>
-            <a href="../../components/tooltips/index.html">
-              Tooltips
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item active">
-      <a class="bd-toc-link" href="../../utilities/borders/index.html">
-        Utilities
-      </a>
+        <div class="collapse" id="getting-started-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../getting-started/introduction/index.html" class="d-inline-flex align-items-center rounded">Introduction</a></li>
+              <li><a href="../../getting-started/download/index.html" class="d-inline-flex align-items-center rounded">Download</a></li>
+              <li><a href="../../getting-started/contents/index.html" class="d-inline-flex align-items-center rounded">Contents</a></li>
+              <li><a href="../../getting-started/browsers-devices/index.html" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
+              <li><a href="../../getting-started/javascript/index.html" class="d-inline-flex align-items-center rounded">JavaScript</a></li>
+              <li><a href="../../getting-started/webpack/index.html" class="d-inline-flex align-items-center rounded">Webpack</a></li>
+              <li><a href="../../getting-started/parcel/index.html" class="d-inline-flex align-items-center rounded">Parcel</a></li>
+              <li><a href="../../getting-started/accessibility/index.html" class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+              <li><a href="../../getting-started/rfs/index.html" class="d-inline-flex align-items-center rounded">RFS</a></li>
+              <li><a href="../../getting-started/rtl/index.html" class="d-inline-flex align-items-center rounded">RTL</a></li>
+              <li><a href="../../getting-started/contribute/index.html" class="d-inline-flex align-items-center rounded">Contribute</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+          Customize
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../utilities/borders/index.html">
-              Borders
-            </a>
-          </li><li>
-            <a href="../../utilities/clearfix/index.html">
-              Clearfix
-            </a>
-          </li><li>
-            <a href="../../utilities/close-icon/index.html">
-              Close icon
-            </a>
-          </li><li>
-            <a href="../../utilities/colors/index.html">
-              Colors
-            </a>
-          </li><li>
-            <a href="../../utilities/display/index.html">
-              Display
-            </a>
-          </li><li>
-            <a href="../../utilities/embed/index.html">
-              Embed
-            </a>
-          </li><li class="active bd-sidenav-active">
-            <a href="../../utilities/flex/index.html">
-              Flex
-            </a>
-          </li><li>
-            <a href="../../utilities/float/index.html">
-              Float
-            </a>
-          </li><li>
-            <a href="../../utilities/image-replacement/index.html">
-              Image replacement
-            </a>
-          </li><li>
-            <a href="../../utilities/overflow/index.html">
-              Overflow
-            </a>
-          </li><li>
-            <a href="../../utilities/position/index.html">
-              Position
-            </a>
-          </li><li>
-            <a href="../../utilities/screen-readers/index.html">
-              Screen readers
-            </a>
-          </li><li>
-            <a href="../../utilities/shadows/index.html">
-              Shadows
-            </a>
-          </li><li>
-            <a href="../../utilities/sizing/index.html">
-              Sizing
-            </a>
-          </li><li>
-            <a href="../../utilities/spacing/index.html">
-              Spacing
-            </a>
-          </li><li>
-            <a href="../../utilities/stretched-link/index.html">
-              Stretched link
-            </a>
-          </li><li>
-            <a href="../../utilities/text/index.html">
-              Text
-            </a>
-          </li><li>
-            <a href="../../utilities/vertical-align/index.html">
-              Vertical align
-            </a>
-          </li><li>
-            <a href="../../utilities/visibility/index.html">
-              Visibility
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../extend/approach/index.html">
-        Extend
-      </a>
+        <div class="collapse" id="customize-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../customize/overview/index.html" class="d-inline-flex align-items-center rounded">Overview</a></li>
+              <li><a href="../../customize/sass/index.html" class="d-inline-flex align-items-center rounded">Sass</a></li>
+              <li><a href="../../customize/options/index.html" class="d-inline-flex align-items-center rounded">Options</a></li>
+              <li><a href="../../customize/color/index.html" class="d-inline-flex align-items-center rounded">Color</a></li>
+              <li><a href="../../customize/components/index.html" class="d-inline-flex align-items-center rounded">Components</a></li>
+              <li><a href="../../customize/css-variables/index.html" class="d-inline-flex align-items-center rounded">CSS variables</a></li>
+              <li><a href="../../customize/optimize/index.html" class="d-inline-flex align-items-center rounded">Optimize</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+          Layout
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../extend/approach/index.html">
-              Approach
-            </a>
-          </li><li>
-            <a href="../../extend/icons/index.html">
-              Icons
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../migration/index.html">
-        Migration
-      </a>
+        <div class="collapse" id="layout-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../layout/breakpoints/index.html" class="d-inline-flex align-items-center rounded">Breakpoints</a></li>
+              <li><a href="../../layout/containers/index.html" class="d-inline-flex align-items-center rounded">Containers</a></li>
+              <li><a href="../../layout/grid/index.html" class="d-inline-flex align-items-center rounded">Grid</a></li>
+              <li><a href="../../layout/columns/index.html" class="d-inline-flex align-items-center rounded">Columns</a></li>
+              <li><a href="../../layout/gutters/index.html" class="d-inline-flex align-items-center rounded">Gutters</a></li>
+              <li><a href="../../layout/utilities/index.html" class="d-inline-flex align-items-center rounded">Utilities</a></li>
+              <li><a href="../../layout/z-index/index.html" class="d-inline-flex align-items-center rounded">Z-index</a></li>
+              <li><a href="../../layout/css-grid/index.html" class="d-inline-flex align-items-center rounded">CSS Grid</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-expanded="false">
+          Content
+        </button>
 
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../about/overview/index.html">
-        About
-      </a>
+        <div class="collapse" id="content-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../content/reboot/index.html" class="d-inline-flex align-items-center rounded">Reboot</a></li>
+              <li><a href="../../content/typography/index.html" class="d-inline-flex align-items-center rounded">Typography</a></li>
+              <li><a href="../../content/images/index.html" class="d-inline-flex align-items-center rounded">Images</a></li>
+              <li><a href="../../content/tables/index.html" class="d-inline-flex align-items-center rounded">Tables</a></li>
+              <li><a href="../../content/figures/index.html" class="d-inline-flex align-items-center rounded">Figures</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+          Forms
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../about/overview/index.html">
-              Overview
-            </a>
-          </li><li>
-            <a href="../../about/team/index.html">
-              Team
-            </a>
-          </li><li>
-            <a href="../../about/brand/index.html">
-              Brand
-            </a>
-          </li><li>
-            <a href="../../about/license/index.html">
-              License
-            </a>
-          </li><li>
-            <a href="../../about/translations/index.html">
-              Translations
-            </a>
-          </li></ul>
-    </div></nav>
+        <div class="collapse" id="forms-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../forms/overview/index.html" class="d-inline-flex align-items-center rounded">Overview</a></li>
+              <li><a href="../../forms/form-control/index.html" class="d-inline-flex align-items-center rounded">Form control</a></li>
+              <li><a href="../../forms/select/index.html" class="d-inline-flex align-items-center rounded">Select</a></li>
+              <li><a href="../../forms/checks-radios/index.html" class="d-inline-flex align-items-center rounded">Checks &amp; radios</a></li>
+              <li><a href="../../forms/range/index.html" class="d-inline-flex align-items-center rounded">Range</a></li>
+              <li><a href="../../forms/input-group/index.html" class="d-inline-flex align-items-center rounded">Input group</a></li>
+              <li><a href="../../forms/floating-labels/index.html" class="d-inline-flex align-items-center rounded">Floating labels</a></li>
+              <li><a href="../../forms/layout/index.html" class="d-inline-flex align-items-center rounded">Layout</a></li>
+              <li><a href="../../forms/validation/index.html" class="d-inline-flex align-items-center rounded">Validation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+          Components
+        </button>
 
+        <div class="collapse" id="components-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../components/accordion/index.html" class="d-inline-flex align-items-center rounded">Accordion</a></li>
+              <li><a href="../../components/alerts/index.html" class="d-inline-flex align-items-center rounded">Alerts</a></li>
+              <li><a href="../../components/badge/index.html" class="d-inline-flex align-items-center rounded">Badge</a></li>
+              <li><a href="../../components/breadcrumb/index.html" class="d-inline-flex align-items-center rounded">Breadcrumb</a></li>
+              <li><a href="../../components/buttons/index.html" class="d-inline-flex align-items-center rounded">Buttons</a></li>
+              <li><a href="../../components/button-group/index.html" class="d-inline-flex align-items-center rounded">Button group</a></li>
+              <li><a href="../../components/card/index.html" class="d-inline-flex align-items-center rounded">Card</a></li>
+              <li><a href="../../components/carousel/index.html" class="d-inline-flex align-items-center rounded">Carousel</a></li>
+              <li><a href="../../components/close-button/index.html" class="d-inline-flex align-items-center rounded">Close button</a></li>
+              <li><a href="../../components/collapse/index.html" class="d-inline-flex align-items-center rounded">Collapse</a></li>
+              <li><a href="../../components/dropdowns/index.html" class="d-inline-flex align-items-center rounded">Dropdowns</a></li>
+              <li><a href="../../components/list-group/index.html" class="d-inline-flex align-items-center rounded">List group</a></li>
+              <li><a href="../../components/modal/index.html" class="d-inline-flex align-items-center rounded">Modal</a></li>
+              <li><a href="../../components/navs-tabs/index.html" class="d-inline-flex align-items-center rounded">Navs &amp; tabs</a></li>
+              <li><a href="../../components/navbar/index.html" class="d-inline-flex align-items-center rounded">Navbar</a></li>
+              <li><a href="../../components/offcanvas/index.html" class="d-inline-flex align-items-center rounded">Offcanvas</a></li>
+              <li><a href="../../components/pagination/index.html" class="d-inline-flex align-items-center rounded">Pagination</a></li>
+              <li><a href="../../components/placeholders/index.html" class="d-inline-flex align-items-center rounded">Placeholders</a></li>
+              <li><a href="../../components/popovers/index.html" class="d-inline-flex align-items-center rounded">Popovers</a></li>
+              <li><a href="../../components/progress/index.html" class="d-inline-flex align-items-center rounded">Progress</a></li>
+              <li><a href="../../components/scrollspy/index.html" class="d-inline-flex align-items-center rounded">Scrollspy</a></li>
+              <li><a href="../../components/spinners/index.html" class="d-inline-flex align-items-center rounded">Spinners</a></li>
+              <li><a href="../../components/toasts/index.html" class="d-inline-flex align-items-center rounded">Toasts</a></li>
+              <li><a href="../../components/tooltips/index.html" class="d-inline-flex align-items-center rounded">Tooltips</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#helpers-collapse" aria-expanded="false">
+          Helpers
+        </button>
+
+        <div class="collapse" id="helpers-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../helpers/clearfix/index.html" class="d-inline-flex align-items-center rounded">Clearfix</a></li>
+              <li><a href="../../helpers/colored-links/index.html" class="d-inline-flex align-items-center rounded">Colored links</a></li>
+              <li><a href="../../helpers/ratio/index.html" class="d-inline-flex align-items-center rounded">Ratio</a></li>
+              <li><a href="../../helpers/position/index.html" class="d-inline-flex align-items-center rounded">Position</a></li>
+              <li><a href="../../helpers/stacks/index.html" class="d-inline-flex align-items-center rounded">Stacks</a></li>
+              <li><a href="../../helpers/visually-hidden/index.html" class="d-inline-flex align-items-center rounded">Visually hidden</a></li>
+              <li><a href="../../helpers/stretched-link/index.html" class="d-inline-flex align-items-center rounded">Stretched link</a></li>
+              <li><a href="../../helpers/text-truncation/index.html" class="d-inline-flex align-items-center rounded">Text truncation</a></li>
+              <li><a href="../../helpers/vertical-rule/index.html" class="d-inline-flex align-items-center rounded">Vertical rule</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#utilities-collapse" aria-expanded="true" aria-current="true">
+          Utilities
+        </button>
+
+        <div class="collapse show" id="utilities-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../api/index.html" class="d-inline-flex align-items-center rounded">API</a></li>
+              <li><a href="../background/index.html" class="d-inline-flex align-items-center rounded">Background</a></li>
+              <li><a href="../borders/index.html" class="d-inline-flex align-items-center rounded">Borders</a></li>
+              <li><a href="../colors/index.html" class="d-inline-flex align-items-center rounded">Colors</a></li>
+              <li><a href="../display/index.html" class="d-inline-flex align-items-center rounded">Display</a></li>
+              <li><a href="index.html" class="d-inline-flex align-items-center rounded active" aria-current="page">Flex</a></li>
+              <li><a href="../float/index.html" class="d-inline-flex align-items-center rounded">Float</a></li>
+              <li><a href="../interactions/index.html" class="d-inline-flex align-items-center rounded">Interactions</a></li>
+              <li><a href="../opacity/index.html" class="d-inline-flex align-items-center rounded">Opacity</a></li>
+              <li><a href="../overflow/index.html" class="d-inline-flex align-items-center rounded">Overflow</a></li>
+              <li><a href="../position/index.html" class="d-inline-flex align-items-center rounded">Position</a></li>
+              <li><a href="../shadows/index.html" class="d-inline-flex align-items-center rounded">Shadows</a></li>
+              <li><a href="../sizing/index.html" class="d-inline-flex align-items-center rounded">Sizing</a></li>
+              <li><a href="../spacing/index.html" class="d-inline-flex align-items-center rounded">Spacing</a></li>
+              <li><a href="../text/index.html" class="d-inline-flex align-items-center rounded">Text</a></li>
+              <li><a href="../vertical-align/index.html" class="d-inline-flex align-items-center rounded">Vertical align</a></li>
+              <li><a href="../visibility/index.html" class="d-inline-flex align-items-center rounded">Visibility</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#extend-collapse" aria-expanded="false">
+          Extend
+        </button>
+
+        <div class="collapse" id="extend-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../extend/approach/index.html" class="d-inline-flex align-items-center rounded">Approach</a></li>
+              <li><a href="../../extend/icons/index.html" class="d-inline-flex align-items-center rounded">Icons</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="false">
+          About
+        </button>
+
+        <div class="collapse" id="about-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../about/overview/index.html" class="d-inline-flex align-items-center rounded">Overview</a></li>
+              <li><a href="../../about/team/index.html" class="d-inline-flex align-items-center rounded">Team</a></li>
+              <li><a href="../../about/brand/index.html" class="d-inline-flex align-items-center rounded">Brand</a></li>
+              <li><a href="../../about/license/index.html" class="d-inline-flex align-items-center rounded">License</a></li>
+              <li><a href="../../about/translations/index.html" class="d-inline-flex align-items-center rounded">Translations</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="my-3 mx-4 border-top"></li>
+      <li>
+        <a href="../../migration/index.html" class="d-inline-flex align-items-center rounded">
+          Migration
+        </a>
+      </li>
+  </ul>
+</nav>
+
+    </aside>
+
+    <main class="bd-main order-1">
+      <div class="bd-intro ps-lg-4">
+        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+          <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/twbs/bootstrap/blob/main/site/content/docs/5.1/utilities/flex.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+          <h1 class="bd-title" id="content">Flex</h1>
+        </div>
+        <p class="bd-lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+        <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&amp;placement=getbootstrapcom" id="_carbonads_js"></script>
+
+      </div>
+
+
+        <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+          <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>
+    <li><a href="#direction">Direction</a></li>
+    <li><a href="#justify-content">Justify content</a></li>
+    <li><a href="#align-items">Align items</a></li>
+    <li><a href="#align-self">Align self</a></li>
+    <li><a href="#fill">Fill</a></li>
+    <li><a href="#grow-and-shrink">Grow and shrink</a></li>
+    <li><a href="#auto-margins">Auto margins</a>
+      <ul>
+        <li><a href="#with-align-items">With align-items</a></li>
+      </ul>
+    </li>
+    <li><a href="#wrap">Wrap</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#align-content">Align content</a></li>
+    <li><a href="#media-object">Media object</a></li>
+    <li><a href="#sass">Sass</a>
+      <ul>
+        <li><a href="#utilities-api">Utilities API</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
         </div>
 
 
-          <nav class="d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
-            <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>
-<li class="toc-entry toc-h2"><a href="#direction">Direction</a></li>
-<li class="toc-entry toc-h2"><a href="#justify-content">Justify content</a></li>
-<li class="toc-entry toc-h2"><a href="#align-items">Align items</a></li>
-<li class="toc-entry toc-h2"><a href="#align-self">Align self</a></li>
-<li class="toc-entry toc-h2"><a href="#fill">Fill</a></li>
-<li class="toc-entry toc-h2"><a href="#grow-and-shrink">Grow and shrink</a></li>
-<li class="toc-entry toc-h2"><a href="#auto-margins">Auto margins</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#with-align-items">With align-items</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#wrap">Wrap</a></li>
-<li class="toc-entry toc-h2"><a href="#order">Order</a></li>
-<li class="toc-entry toc-h2"><a href="#align-content">Align content</a></li>
-</ul>
-          </nav>
+      <div class="bd-content ps-lg-4">
 
 
-        <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main"> <p class="text-center"> If you <span><img src="../../assets/img/heart-icon.png" style="height: 2rem" alt=""></span> this project, you can buy us a
-              <a href="https://www.buymeacoffee.com/libracoder" target="_blank"><span><img src="../../assets/img/orange+buy+me+a+coffee.jpg" style="height: 2rem" alt=""></span></a> to support us.</p>
-          <h1 class="bd-title" id="content">Flex</h1>
-          <p class="bd-lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
-          <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
-
-          <h2 id="enable-flex-behaviors">Enable flex behaviors</h2>
-
-<p>Apply <code class="highlighter-rouge">display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
-
+        <h2 id="enable-flex-behaviors">Enable flex behaviors</h2>
+<p>Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
 <div class="bd-example">
 <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex p-2 bd-highlight"</span><span class="nt">&gt;</span>I'm a flexbox container!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex p-2 bd-highlight&#34;</span><span class="p">&gt;</span>I&#39;m a flexbox container!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <div class="bd-example">
 <div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-flex p-2 bd-highlight"</span><span class="nt">&gt;</span>I'm an inline flexbox container!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">.d-flex</code> and <code class="highlighter-rouge">.d-inline-flex</code>.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-flex p-2 bd-highlight&#34;</span><span class="p">&gt;</span>I&#39;m an inline flexbox container!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.d-flex</code></li>
-  <li><code class="highlighter-rouge">.d-inline-flex</code></li>
-  <li><code class="highlighter-rouge">.d-sm-flex</code></li>
-  <li><code class="highlighter-rouge">.d-sm-inline-flex</code></li>
-  <li><code class="highlighter-rouge">.d-md-flex</code></li>
-  <li><code class="highlighter-rouge">.d-md-inline-flex</code></li>
-  <li><code class="highlighter-rouge">.d-lg-flex</code></li>
-  <li><code class="highlighter-rouge">.d-lg-inline-flex</code></li>
-  <li><code class="highlighter-rouge">.d-xl-flex</code></li>
-  <li><code class="highlighter-rouge">.d-xl-inline-flex</code></li>
+<li><code>.d-flex</code></li>
+<li><code>.d-inline-flex</code></li>
+<li><code>.d-sm-flex</code></li>
+<li><code>.d-sm-inline-flex</code></li>
+<li><code>.d-md-flex</code></li>
+<li><code>.d-md-inline-flex</code></li>
+<li><code>.d-lg-flex</code></li>
+<li><code>.d-lg-inline-flex</code></li>
+<li><code>.d-xl-flex</code></li>
+<li><code>.d-xl-inline-flex</code></li>
+<li><code>.d-xxl-flex</code></li>
+<li><code>.d-xxl-inline-flex</code></li>
 </ul>
 
 <h2 id="direction">Direction</h2>
-
-<p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code class="highlighter-rouge">row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
-
-<p>Use <code class="highlighter-rouge">.flex-row</code> to set a horizontal direction (the browser default), or <code class="highlighter-rouge">.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
-
+<p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
+<p>Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
 <div class="bd-example">
 <div class="d-flex flex-row bd-highlight mb-3">
   <div class="p-2 bd-highlight">Flex item 1</div>
@@ -535,20 +432,17 @@
   <div class="p-2 bd-highlight">Flex item 2</div>
   <div class="p-2 bd-highlight">Flex item 3</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-row bd-highlight mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-row-reverse bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Use <code class="highlighter-rouge">.flex-column</code> to set a vertical direction, or <code class="highlighter-rouge">.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-row bd-highlight mb-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-row-reverse bd-highlight&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
 <div class="bd-example">
 <div class="d-flex flex-column bd-highlight mb-3">
   <div class="p-2 bd-highlight">Flex item 1</div>
@@ -560,47 +454,46 @@
   <div class="p-2 bd-highlight">Flex item 2</div>
   <div class="p-2 bd-highlight">Flex item 3</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-column bd-highlight mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-column-reverse bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-direction</code>.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-column bd-highlight mb-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-column-reverse bd-highlight&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Responsive variations also exist for <code>flex-direction</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.flex-row</code></li>
-  <li><code class="highlighter-rouge">.flex-row-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-column</code></li>
-  <li><code class="highlighter-rouge">.flex-column-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-row</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-row-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-column</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-column-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-md-row</code></li>
-  <li><code class="highlighter-rouge">.flex-md-row-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-md-column</code></li>
-  <li><code class="highlighter-rouge">.flex-md-column-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-row</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-row-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-column</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-column-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-row</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-row-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-column</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-column-reverse</code></li>
+<li><code>.flex-row</code></li>
+<li><code>.flex-row-reverse</code></li>
+<li><code>.flex-column</code></li>
+<li><code>.flex-column-reverse</code></li>
+<li><code>.flex-sm-row</code></li>
+<li><code>.flex-sm-row-reverse</code></li>
+<li><code>.flex-sm-column</code></li>
+<li><code>.flex-sm-column-reverse</code></li>
+<li><code>.flex-md-row</code></li>
+<li><code>.flex-md-row-reverse</code></li>
+<li><code>.flex-md-column</code></li>
+<li><code>.flex-md-column-reverse</code></li>
+<li><code>.flex-lg-row</code></li>
+<li><code>.flex-lg-row-reverse</code></li>
+<li><code>.flex-lg-column</code></li>
+<li><code>.flex-lg-column-reverse</code></li>
+<li><code>.flex-xl-row</code></li>
+<li><code>.flex-xl-row-reverse</code></li>
+<li><code>.flex-xl-column</code></li>
+<li><code>.flex-xl-column-reverse</code></li>
+<li><code>.flex-xxl-row</code></li>
+<li><code>.flex-xxl-row-reverse</code></li>
+<li><code>.flex-xxl-column</code></li>
+<li><code>.flex-xxl-column-reverse</code></li>
 </ul>
 
 <h2 id="justify-content">Justify content</h2>
-
-<p>Use <code class="highlighter-rouge">justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code class="highlighter-rouge">flex-direction: column</code>). Choose from <code class="highlighter-rouge">start</code> (browser default), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code>, or <code class="highlighter-rouge">around</code>.</p>
-
+<p>Use <code>justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>evenly</code>.</p>
 <div class="bd-example">
   <div class="d-flex justify-content-start bd-highlight mb-3">
     <div class="p-2 bd-highlight">Flex item</div>
@@ -622,53 +515,65 @@
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
-  <div class="d-flex justify-content-around bd-highlight">
+  <div class="d-flex justify-content-around bd-highlight mb-3">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+  <div class="d-flex justify-content-evenly bd-highlight">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-start"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-end"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-center"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-between"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-around"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">justify-content</code>.</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-start&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-end&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-center&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-between&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-around&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-evenly&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>Responsive variations also exist for <code>justify-content</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.justify-content-start</code></li>
-  <li><code class="highlighter-rouge">.justify-content-end</code></li>
-  <li><code class="highlighter-rouge">.justify-content-center</code></li>
-  <li><code class="highlighter-rouge">.justify-content-between</code></li>
-  <li><code class="highlighter-rouge">.justify-content-around</code></li>
-  <li><code class="highlighter-rouge">.justify-content-sm-start</code></li>
-  <li><code class="highlighter-rouge">.justify-content-sm-end</code></li>
-  <li><code class="highlighter-rouge">.justify-content-sm-center</code></li>
-  <li><code class="highlighter-rouge">.justify-content-sm-between</code></li>
-  <li><code class="highlighter-rouge">.justify-content-sm-around</code></li>
-  <li><code class="highlighter-rouge">.justify-content-md-start</code></li>
-  <li><code class="highlighter-rouge">.justify-content-md-end</code></li>
-  <li><code class="highlighter-rouge">.justify-content-md-center</code></li>
-  <li><code class="highlighter-rouge">.justify-content-md-between</code></li>
-  <li><code class="highlighter-rouge">.justify-content-md-around</code></li>
-  <li><code class="highlighter-rouge">.justify-content-lg-start</code></li>
-  <li><code class="highlighter-rouge">.justify-content-lg-end</code></li>
-  <li><code class="highlighter-rouge">.justify-content-lg-center</code></li>
-  <li><code class="highlighter-rouge">.justify-content-lg-between</code></li>
-  <li><code class="highlighter-rouge">.justify-content-lg-around</code></li>
-  <li><code class="highlighter-rouge">.justify-content-xl-start</code></li>
-  <li><code class="highlighter-rouge">.justify-content-xl-end</code></li>
-  <li><code class="highlighter-rouge">.justify-content-xl-center</code></li>
-  <li><code class="highlighter-rouge">.justify-content-xl-between</code></li>
-  <li><code class="highlighter-rouge">.justify-content-xl-around</code></li>
+<li><code>.justify-content-start</code></li>
+<li><code>.justify-content-end</code></li>
+<li><code>.justify-content-center</code></li>
+<li><code>.justify-content-between</code></li>
+<li><code>.justify-content-around</code></li>
+<li><code>.justify-content-evenly</code></li>
+<li><code>.justify-content-sm-start</code></li>
+<li><code>.justify-content-sm-end</code></li>
+<li><code>.justify-content-sm-center</code></li>
+<li><code>.justify-content-sm-between</code></li>
+<li><code>.justify-content-sm-around</code></li>
+<li><code>.justify-content-sm-evenly</code></li>
+<li><code>.justify-content-md-start</code></li>
+<li><code>.justify-content-md-end</code></li>
+<li><code>.justify-content-md-center</code></li>
+<li><code>.justify-content-md-between</code></li>
+<li><code>.justify-content-md-around</code></li>
+<li><code>.justify-content-md-evenly</code></li>
+<li><code>.justify-content-lg-start</code></li>
+<li><code>.justify-content-lg-end</code></li>
+<li><code>.justify-content-lg-center</code></li>
+<li><code>.justify-content-lg-between</code></li>
+<li><code>.justify-content-lg-around</code></li>
+<li><code>.justify-content-lg-evenly</code></li>
+<li><code>.justify-content-xl-start</code></li>
+<li><code>.justify-content-xl-end</code></li>
+<li><code>.justify-content-xl-center</code></li>
+<li><code>.justify-content-xl-between</code></li>
+<li><code>.justify-content-xl-around</code></li>
+<li><code>.justify-content-xl-evenly</code></li>
+<li><code>.justify-content-xxl-start</code></li>
+<li><code>.justify-content-xxl-end</code></li>
+<li><code>.justify-content-xxl-center</code></li>
+<li><code>.justify-content-xxl-between</code></li>
+<li><code>.justify-content-xxl-around</code></li>
+<li><code>.justify-content-xxl-evenly</code></li>
 </ul>
 
 <h2 id="align-items">Align items</h2>
-
-<p>Use <code class="highlighter-rouge">align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code class="highlighter-rouge">flex-direction: column</code>). Choose from <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code>, or <code class="highlighter-rouge">stretch</code> (browser default).</p>
-
+<p>Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
 <div class="bd-example">
   <div class="d-flex align-items-start bd-highlight mb-3" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
@@ -696,47 +601,47 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-start"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-end"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-baseline"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-stretch"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">align-items</code>.</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-start&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-end&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-center&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-baseline&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-stretch&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>Responsive variations also exist for <code>align-items</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.align-items-start</code></li>
-  <li><code class="highlighter-rouge">.align-items-end</code></li>
-  <li><code class="highlighter-rouge">.align-items-center</code></li>
-  <li><code class="highlighter-rouge">.align-items-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-items-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-items-sm-start</code></li>
-  <li><code class="highlighter-rouge">.align-items-sm-end</code></li>
-  <li><code class="highlighter-rouge">.align-items-sm-center</code></li>
-  <li><code class="highlighter-rouge">.align-items-sm-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-items-sm-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-items-md-start</code></li>
-  <li><code class="highlighter-rouge">.align-items-md-end</code></li>
-  <li><code class="highlighter-rouge">.align-items-md-center</code></li>
-  <li><code class="highlighter-rouge">.align-items-md-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-items-md-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-items-lg-start</code></li>
-  <li><code class="highlighter-rouge">.align-items-lg-end</code></li>
-  <li><code class="highlighter-rouge">.align-items-lg-center</code></li>
-  <li><code class="highlighter-rouge">.align-items-lg-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-items-lg-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-items-xl-start</code></li>
-  <li><code class="highlighter-rouge">.align-items-xl-end</code></li>
-  <li><code class="highlighter-rouge">.align-items-xl-center</code></li>
-  <li><code class="highlighter-rouge">.align-items-xl-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-items-xl-stretch</code></li>
+<li><code>.align-items-start</code></li>
+<li><code>.align-items-end</code></li>
+<li><code>.align-items-center</code></li>
+<li><code>.align-items-baseline</code></li>
+<li><code>.align-items-stretch</code></li>
+<li><code>.align-items-sm-start</code></li>
+<li><code>.align-items-sm-end</code></li>
+<li><code>.align-items-sm-center</code></li>
+<li><code>.align-items-sm-baseline</code></li>
+<li><code>.align-items-sm-stretch</code></li>
+<li><code>.align-items-md-start</code></li>
+<li><code>.align-items-md-end</code></li>
+<li><code>.align-items-md-center</code></li>
+<li><code>.align-items-md-baseline</code></li>
+<li><code>.align-items-md-stretch</code></li>
+<li><code>.align-items-lg-start</code></li>
+<li><code>.align-items-lg-end</code></li>
+<li><code>.align-items-lg-center</code></li>
+<li><code>.align-items-lg-baseline</code></li>
+<li><code>.align-items-lg-stretch</code></li>
+<li><code>.align-items-xl-start</code></li>
+<li><code>.align-items-xl-end</code></li>
+<li><code>.align-items-xl-center</code></li>
+<li><code>.align-items-xl-baseline</code></li>
+<li><code>.align-items-xl-stretch</code></li>
+<li><code>.align-items-xxl-start</code></li>
+<li><code>.align-items-xxl-end</code></li>
+<li><code>.align-items-xxl-center</code></li>
+<li><code>.align-items-xxl-baseline</code></li>
+<li><code>.align-items-xxl-stretch</code></li>
 </ul>
 
 <h2 id="align-self">Align self</h2>
-
-<p>Use <code class="highlighter-rouge">align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code class="highlighter-rouge">flex-direction: column</code>). Choose from the same options as <code class="highlighter-rouge">align-items</code>: <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code>, or <code class="highlighter-rouge">stretch</code> (browser default).</p>
-
+<p>Use <code>align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as <code>align-items</code>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
 <div class="bd-example">
   <div class="d-flex bd-highlight mb-3" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
@@ -764,121 +669,109 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-start"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-end"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-center"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-baseline"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-stretch"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">align-self</code>.</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-self-start&#34;</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-self-end&#34;</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-self-center&#34;</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-self-baseline&#34;</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-self-stretch&#34;</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>Responsive variations also exist for <code>align-self</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.align-self-start</code></li>
-  <li><code class="highlighter-rouge">.align-self-end</code></li>
-  <li><code class="highlighter-rouge">.align-self-center</code></li>
-  <li><code class="highlighter-rouge">.align-self-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-self-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-self-sm-start</code></li>
-  <li><code class="highlighter-rouge">.align-self-sm-end</code></li>
-  <li><code class="highlighter-rouge">.align-self-sm-center</code></li>
-  <li><code class="highlighter-rouge">.align-self-sm-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-self-sm-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-self-md-start</code></li>
-  <li><code class="highlighter-rouge">.align-self-md-end</code></li>
-  <li><code class="highlighter-rouge">.align-self-md-center</code></li>
-  <li><code class="highlighter-rouge">.align-self-md-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-self-md-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-self-lg-start</code></li>
-  <li><code class="highlighter-rouge">.align-self-lg-end</code></li>
-  <li><code class="highlighter-rouge">.align-self-lg-center</code></li>
-  <li><code class="highlighter-rouge">.align-self-lg-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-self-lg-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-self-xl-start</code></li>
-  <li><code class="highlighter-rouge">.align-self-xl-end</code></li>
-  <li><code class="highlighter-rouge">.align-self-xl-center</code></li>
-  <li><code class="highlighter-rouge">.align-self-xl-baseline</code></li>
-  <li><code class="highlighter-rouge">.align-self-xl-stretch</code></li>
+<li><code>.align-self-start</code></li>
+<li><code>.align-self-end</code></li>
+<li><code>.align-self-center</code></li>
+<li><code>.align-self-baseline</code></li>
+<li><code>.align-self-stretch</code></li>
+<li><code>.align-self-sm-start</code></li>
+<li><code>.align-self-sm-end</code></li>
+<li><code>.align-self-sm-center</code></li>
+<li><code>.align-self-sm-baseline</code></li>
+<li><code>.align-self-sm-stretch</code></li>
+<li><code>.align-self-md-start</code></li>
+<li><code>.align-self-md-end</code></li>
+<li><code>.align-self-md-center</code></li>
+<li><code>.align-self-md-baseline</code></li>
+<li><code>.align-self-md-stretch</code></li>
+<li><code>.align-self-lg-start</code></li>
+<li><code>.align-self-lg-end</code></li>
+<li><code>.align-self-lg-center</code></li>
+<li><code>.align-self-lg-baseline</code></li>
+<li><code>.align-self-lg-stretch</code></li>
+<li><code>.align-self-xl-start</code></li>
+<li><code>.align-self-xl-end</code></li>
+<li><code>.align-self-xl-center</code></li>
+<li><code>.align-self-xl-baseline</code></li>
+<li><code>.align-self-xl-stretch</code></li>
+<li><code>.align-self-xxl-start</code></li>
+<li><code>.align-self-xxl-end</code></li>
+<li><code>.align-self-xxl-center</code></li>
+<li><code>.align-self-xxl-baseline</code></li>
+<li><code>.align-self-xxl-stretch</code></li>
 </ul>
 
 <h2 id="fill">Fill</h2>
-
-<p>Use the <code class="highlighter-rouge">.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
-
+<p>Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
 <div class="bd-example">
 <div class="d-flex bd-highlight">
   <div class="p-2 flex-fill bd-highlight">Flex item with a lot of content</div>
   <div class="p-2 flex-fill bd-highlight">Flex item</div>
   <div class="p-2 flex-fill bd-highlight">Flex item</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="nt">&gt;</span>Flex item with a lot of content<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-fill</code>.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex bd-highlight&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 flex-fill bd-highlight&#34;</span><span class="p">&gt;</span>Flex item with a lot of content<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 flex-fill bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 flex-fill bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Responsive variations also exist for <code>flex-fill</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.flex-fill</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-fill</code></li>
-  <li><code class="highlighter-rouge">.flex-md-fill</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-fill</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-fill</code></li>
+<li><code>.flex-fill</code></li>
+<li><code>.flex-sm-fill</code></li>
+<li><code>.flex-md-fill</code></li>
+<li><code>.flex-lg-fill</code></li>
+<li><code>.flex-xl-fill</code></li>
+<li><code>.flex-xxl-fill</code></li>
 </ul>
 
 <h2 id="grow-and-shrink">Grow and shrink</h2>
-
-<p>Use <code class="highlighter-rouge">.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code class="highlighter-rouge">.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
-
+<p>Use <code>.flex-grow-*</code> utilities to toggle a flex item&rsquo;s ability to grow to fill available space. In the example below, the <code>.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
 <div class="bd-example">
 <div class="d-flex bd-highlight">
   <div class="p-2 flex-grow-1 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Third flex item</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-grow-1 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Third flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Use <code class="highlighter-rouge">.flex-shrink-*</code> utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with <code class="highlighter-rouge">.flex-shrink-1</code> is forced to wrap it’s contents to a new line, “shrinking” to allow more space for the previous flex item with <code class="highlighter-rouge">.w-100</code>.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex bd-highlight&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 flex-grow-1 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Third flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Use <code>.flex-shrink-*</code> utilities to toggle a flex item&rsquo;s ability to shrink if necessary. In the example below, the second flex item with <code>.flex-shrink-1</code> is forced to wrap its contents to a new line, &ldquo;shrinking&rdquo; to allow more space for the previous flex item with <code>.w-100</code>.</p>
 <div class="bd-example">
 <div class="d-flex bd-highlight">
   <div class="p-2 w-100 bd-highlight">Flex item</div>
   <div class="p-2 flex-shrink-1 bd-highlight">Flex item</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 w-100 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-shrink-1 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-grow</code> and <code class="highlighter-rouge">flex-shrink</code>.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex bd-highlight&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 w-100 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 flex-shrink-1 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Responsive variations also exist for <code>flex-grow</code> and <code>flex-shrink</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.flex-{grow|shrink}-0</code></li>
-  <li><code class="highlighter-rouge">.flex-{grow|shrink}-1</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-{grow|shrink}-0</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-{grow|shrink}-1</code></li>
-  <li><code class="highlighter-rouge">.flex-md-{grow|shrink}-0</code></li>
-  <li><code class="highlighter-rouge">.flex-md-{grow|shrink}-1</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-{grow|shrink}-0</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-{grow|shrink}-1</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-{grow|shrink}-0</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-{grow|shrink}-1</code></li>
+<li><code>.flex-{grow|shrink}-0</code></li>
+<li><code>.flex-{grow|shrink}-1</code></li>
+<li><code>.flex-sm-{grow|shrink}-0</code></li>
+<li><code>.flex-sm-{grow|shrink}-1</code></li>
+<li><code>.flex-md-{grow|shrink}-0</code></li>
+<li><code>.flex-md-{grow|shrink}-1</code></li>
+<li><code>.flex-lg-{grow|shrink}-0</code></li>
+<li><code>.flex-lg-{grow|shrink}-1</code></li>
+<li><code>.flex-xl-{grow|shrink}-0</code></li>
+<li><code>.flex-xl-{grow|shrink}-1</code></li>
+<li><code>.flex-xxl-{grow|shrink}-0</code></li>
+<li><code>.flex-xxl-{grow|shrink}-1</code></li>
 </ul>
 
 <h2 id="auto-margins">Auto margins</h2>
-
-<p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code class="highlighter-rouge">.mr-auto</code>), and pushing two items to the left (<code class="highlighter-rouge">.ml-auto</code>).</p>
-
-<p><strong>Unfortunately, IE10 and IE11 do not properly support auto margins on flex items whose parent has a non-default <code class="highlighter-rouge">justify-content</code> value.</strong> <a href="https://stackoverflow.com/a/37535548">See this StackOverflow answer</a> for more details.</p>
-
+<p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>).</p>
 <div class="bd-example">
 <div class="d-flex bd-highlight mb-3">
   <div class="p-2 bd-highlight">Flex item</div>
@@ -887,7 +780,7 @@
 </div>
 
 <div class="d-flex bd-highlight mb-3">
-  <div class="mr-auto p-2 bd-highlight">Flex item</div>
+  <div class="me-auto p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
 </div>
@@ -895,31 +788,27 @@
 <div class="d-flex bd-highlight mb-3">
   <div class="p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
-  <div class="ml-auto p-2 bd-highlight">Flex item</div>
+  <div class="ms-auto p-2 bd-highlight">Flex item</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex bd-highlight mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex bd-highlight mb-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex bd-highlight mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mr-auto p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex bd-highlight mb-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex bd-highlight mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ml-auto p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex bd-highlight mb-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-auto p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="with-align-items">With align-items</h3>
-
-<p>Vertically move one flex item to the top or bottom of a container by mixing <code class="highlighter-rouge">align-items</code>, <code class="highlighter-rouge">flex-direction: column</code>, and <code class="highlighter-rouge">margin-top: auto</code> or <code class="highlighter-rouge">margin-bottom: auto</code>.</p>
-
+<p>Vertically move one flex item to the top or bottom of a container by mixing <code>align-items</code>, <code>flex-direction: column</code>, and <code>margin-top: auto</code> or <code>margin-bottom: auto</code>.</p>
 <div class="bd-example">
 <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
   <div class="mb-auto p-2 bd-highlight">Flex item</div>
@@ -932,23 +821,19 @@
   <div class="p-2 bd-highlight">Flex item</div>
   <div class="mt-auto p-2 bd-highlight">Flex item</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-start flex-column bd-highlight mb-3"</span> <span class="na">style=</span><span class="s">"height: 200px;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-auto p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-start flex-column bd-highlight mb-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 200px;&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mb-auto p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-end flex-column bd-highlight mb-3"</span> <span class="na">style=</span><span class="s">"height: 200px;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mt-auto p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-end flex-column bd-highlight mb-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 200px;&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mt-auto p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="wrap">Wrap</h2>
-
-<p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code class="highlighter-rouge">.flex-nowrap</code>, wrapping with <code class="highlighter-rouge">.flex-wrap</code>, or reverse wrapping with <code class="highlighter-rouge">.flex-wrap-reverse</code>.</p>
-
+<p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code>.flex-nowrap</code>, wrapping with <code>.flex-wrap</code>, or reverse wrapping with <code>.flex-wrap-reverse</code>.</p>
 <div class="bd-example">
   <div class="d-flex flex-nowrap bd-highlight" style="width: 8rem;">
     <div class="p-2 bd-highlight">Flex item</div>
@@ -958,12 +843,10 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-nowrap"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-nowrap&#34;</span><span class="p">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex flex-wrap bd-highlight">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -982,12 +865,10 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-wrap"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-wrap&#34;</span><span class="p">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex flex-wrap-reverse bd-highlight">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1006,124 +887,103 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-wrap-reverse"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-wrap-reverse&#34;</span><span class="p">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-wrap</code>.</p>
-
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>Responsive variations also exist for <code>flex-wrap</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.flex-nowrap</code></li>
-  <li><code class="highlighter-rouge">.flex-wrap</code></li>
-  <li><code class="highlighter-rouge">.flex-wrap-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-nowrap</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-wrap</code></li>
-  <li><code class="highlighter-rouge">.flex-sm-wrap-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-md-nowrap</code></li>
-  <li><code class="highlighter-rouge">.flex-md-wrap</code></li>
-  <li><code class="highlighter-rouge">.flex-md-wrap-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-nowrap</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-wrap</code></li>
-  <li><code class="highlighter-rouge">.flex-lg-wrap-reverse</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-nowrap</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-wrap</code></li>
-  <li><code class="highlighter-rouge">.flex-xl-wrap-reverse</code></li>
+<li><code>.flex-nowrap</code></li>
+<li><code>.flex-wrap</code></li>
+<li><code>.flex-wrap-reverse</code></li>
+<li><code>.flex-sm-nowrap</code></li>
+<li><code>.flex-sm-wrap</code></li>
+<li><code>.flex-sm-wrap-reverse</code></li>
+<li><code>.flex-md-nowrap</code></li>
+<li><code>.flex-md-wrap</code></li>
+<li><code>.flex-md-wrap-reverse</code></li>
+<li><code>.flex-lg-nowrap</code></li>
+<li><code>.flex-lg-wrap</code></li>
+<li><code>.flex-lg-wrap-reverse</code></li>
+<li><code>.flex-xl-nowrap</code></li>
+<li><code>.flex-xl-wrap</code></li>
+<li><code>.flex-xl-wrap-reverse</code></li>
+<li><code>.flex-xxl-nowrap</code></li>
+<li><code>.flex-xxl-wrap</code></li>
+<li><code>.flex-xxl-wrap-reverse</code></li>
 </ul>
 
 <h2 id="order">Order</h2>
-
-<p>Change the <em>visual</em> order of specific flex items with a handful of <code class="highlighter-rouge">order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code class="highlighter-rouge">order</code> takes any integer value (e.g., <code class="highlighter-rouge">5</code>), add custom CSS for any additional values needed.</p>
-
+<p>Change the <em>visual</em> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code>order</code> takes any integer value from 0 to 5, add custom CSS for any additional values needed.</p>
 <div class="bd-example">
 <div class="d-flex flex-nowrap bd-highlight">
   <div class="order-3 p-2 bd-highlight">First flex item</div>
   <div class="order-2 p-2 bd-highlight">Second flex item</div>
   <div class="order-1 p-2 bd-highlight">Third flex item</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-nowrap bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-3 p-2 bd-highlight"</span><span class="nt">&gt;</span>First flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-2 p-2 bd-highlight"</span><span class="nt">&gt;</span>Second flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-1 p-2 bd-highlight"</span><span class="nt">&gt;</span>Third flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">order</code>.</p>
-
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-nowrap bd-highlight&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;order-3 p-2 bd-highlight&#34;</span><span class="p">&gt;</span>First flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;order-2 p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Second flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;order-1 p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Third flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Responsive variations also exist for <code>order</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.order-0</code></li>
-  <li><code class="highlighter-rouge">.order-1</code></li>
-  <li><code class="highlighter-rouge">.order-2</code></li>
-  <li><code class="highlighter-rouge">.order-3</code></li>
-  <li><code class="highlighter-rouge">.order-4</code></li>
-  <li><code class="highlighter-rouge">.order-5</code></li>
-  <li><code class="highlighter-rouge">.order-6</code></li>
-  <li><code class="highlighter-rouge">.order-7</code></li>
-  <li><code class="highlighter-rouge">.order-8</code></li>
-  <li><code class="highlighter-rouge">.order-9</code></li>
-  <li><code class="highlighter-rouge">.order-10</code></li>
-  <li><code class="highlighter-rouge">.order-11</code></li>
-  <li><code class="highlighter-rouge">.order-12</code></li>
-  <li><code class="highlighter-rouge">.order-sm-0</code></li>
-  <li><code class="highlighter-rouge">.order-sm-1</code></li>
-  <li><code class="highlighter-rouge">.order-sm-2</code></li>
-  <li><code class="highlighter-rouge">.order-sm-3</code></li>
-  <li><code class="highlighter-rouge">.order-sm-4</code></li>
-  <li><code class="highlighter-rouge">.order-sm-5</code></li>
-  <li><code class="highlighter-rouge">.order-sm-6</code></li>
-  <li><code class="highlighter-rouge">.order-sm-7</code></li>
-  <li><code class="highlighter-rouge">.order-sm-8</code></li>
-  <li><code class="highlighter-rouge">.order-sm-9</code></li>
-  <li><code class="highlighter-rouge">.order-sm-10</code></li>
-  <li><code class="highlighter-rouge">.order-sm-11</code></li>
-  <li><code class="highlighter-rouge">.order-sm-12</code></li>
-  <li><code class="highlighter-rouge">.order-md-0</code></li>
-  <li><code class="highlighter-rouge">.order-md-1</code></li>
-  <li><code class="highlighter-rouge">.order-md-2</code></li>
-  <li><code class="highlighter-rouge">.order-md-3</code></li>
-  <li><code class="highlighter-rouge">.order-md-4</code></li>
-  <li><code class="highlighter-rouge">.order-md-5</code></li>
-  <li><code class="highlighter-rouge">.order-md-6</code></li>
-  <li><code class="highlighter-rouge">.order-md-7</code></li>
-  <li><code class="highlighter-rouge">.order-md-8</code></li>
-  <li><code class="highlighter-rouge">.order-md-9</code></li>
-  <li><code class="highlighter-rouge">.order-md-10</code></li>
-  <li><code class="highlighter-rouge">.order-md-11</code></li>
-  <li><code class="highlighter-rouge">.order-md-12</code></li>
-  <li><code class="highlighter-rouge">.order-lg-0</code></li>
-  <li><code class="highlighter-rouge">.order-lg-1</code></li>
-  <li><code class="highlighter-rouge">.order-lg-2</code></li>
-  <li><code class="highlighter-rouge">.order-lg-3</code></li>
-  <li><code class="highlighter-rouge">.order-lg-4</code></li>
-  <li><code class="highlighter-rouge">.order-lg-5</code></li>
-  <li><code class="highlighter-rouge">.order-lg-6</code></li>
-  <li><code class="highlighter-rouge">.order-lg-7</code></li>
-  <li><code class="highlighter-rouge">.order-lg-8</code></li>
-  <li><code class="highlighter-rouge">.order-lg-9</code></li>
-  <li><code class="highlighter-rouge">.order-lg-10</code></li>
-  <li><code class="highlighter-rouge">.order-lg-11</code></li>
-  <li><code class="highlighter-rouge">.order-lg-12</code></li>
-  <li><code class="highlighter-rouge">.order-xl-0</code></li>
-  <li><code class="highlighter-rouge">.order-xl-1</code></li>
-  <li><code class="highlighter-rouge">.order-xl-2</code></li>
-  <li><code class="highlighter-rouge">.order-xl-3</code></li>
-  <li><code class="highlighter-rouge">.order-xl-4</code></li>
-  <li><code class="highlighter-rouge">.order-xl-5</code></li>
-  <li><code class="highlighter-rouge">.order-xl-6</code></li>
-  <li><code class="highlighter-rouge">.order-xl-7</code></li>
-  <li><code class="highlighter-rouge">.order-xl-8</code></li>
-  <li><code class="highlighter-rouge">.order-xl-9</code></li>
-  <li><code class="highlighter-rouge">.order-xl-10</code></li>
-  <li><code class="highlighter-rouge">.order-xl-11</code></li>
-  <li><code class="highlighter-rouge">.order-xl-12</code></li>
+<li><code>.order-0</code></li>
+<li><code>.order-1</code></li>
+<li><code>.order-2</code></li>
+<li><code>.order-3</code></li>
+<li><code>.order-4</code></li>
+<li><code>.order-5</code></li>
+<li><code>.order-sm-0</code></li>
+<li><code>.order-sm-1</code></li>
+<li><code>.order-sm-2</code></li>
+<li><code>.order-sm-3</code></li>
+<li><code>.order-sm-4</code></li>
+<li><code>.order-sm-5</code></li>
+<li><code>.order-md-0</code></li>
+<li><code>.order-md-1</code></li>
+<li><code>.order-md-2</code></li>
+<li><code>.order-md-3</code></li>
+<li><code>.order-md-4</code></li>
+<li><code>.order-md-5</code></li>
+<li><code>.order-lg-0</code></li>
+<li><code>.order-lg-1</code></li>
+<li><code>.order-lg-2</code></li>
+<li><code>.order-lg-3</code></li>
+<li><code>.order-lg-4</code></li>
+<li><code>.order-lg-5</code></li>
+<li><code>.order-xl-0</code></li>
+<li><code>.order-xl-1</code></li>
+<li><code>.order-xl-2</code></li>
+<li><code>.order-xl-3</code></li>
+<li><code>.order-xl-4</code></li>
+<li><code>.order-xl-5</code></li>
+<li><code>.order-xxl-0</code></li>
+<li><code>.order-xxl-1</code></li>
+<li><code>.order-xxl-2</code></li>
+<li><code>.order-xxl-3</code></li>
+<li><code>.order-xxl-4</code></li>
+<li><code>.order-xxl-5</code></li>
+</ul>
+
+<p>Additionally there are also responsive <code>.order-first</code> and <code>.order-last</code> classes that change the <code>order</code> of an element by applying <code>order: -1</code> and <code>order: 6</code>, respectively.</p>
+<ul>
+<li><code>.order-first</code></li>
+<li><code>.order-last</code></li>
+<li><code>.order-sm-first</code></li>
+<li><code>.order-sm-last</code></li>
+<li><code>.order-md-first</code></li>
+<li><code>.order-md-last</code></li>
+<li><code>.order-lg-first</code></li>
+<li><code>.order-lg-last</code></li>
+<li><code>.order-xl-first</code></li>
+<li><code>.order-xl-last</code></li>
+<li><code>.order-xxl-first</code></li>
+<li><code>.order-xxl-last</code></li>
 </ul>
 
 <h2 id="align-content">Align content</h2>
-
-<p>Use <code class="highlighter-rouge">align-content</code> utilities on flexbox containers to align flex items <em>together</em> on the cross axis. Choose from <code class="highlighter-rouge">start</code> (browser default), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code>, <code class="highlighter-rouge">around</code>, or <code class="highlighter-rouge">stretch</code>. To demonstrate these utilities, we’ve enforced <code class="highlighter-rouge">flex-wrap: wrap</code> and increased the number of flex items.</p>
-
+<p>Use <code>align-content</code> utilities on flexbox containers to align flex items <em>together</em> on the cross axis. Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch</code>. To demonstrate these utilities, we&rsquo;ve enforced <code>flex-wrap: wrap</code> and increased the number of flex items.</p>
 <p><strong>Heads up!</strong> This property has no effect on single rows of flex items.</p>
-
 <div class="bd-example">
   <div class="d-flex align-content-start flex-wrap bd-highlight mb-3" style="height: 200px">
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1143,12 +1003,10 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-start flex-wrap"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-content-start flex-wrap&#34;</span><span class="p">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex align-content-end flex-wrap bd-highlight mb-3" style="height: 200px">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1167,10 +1025,8 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-end flex-wrap"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-content-end flex-wrap&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex align-content-center flex-wrap bd-highlight mb-3" style="height: 200px">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1189,10 +1045,8 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-center flex-wrap"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-content-center flex-wrap&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex align-content-between flex-wrap bd-highlight mb-3" style="height: 200px">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1211,10 +1065,8 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-between flex-wrap"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-content-between flex-wrap&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex align-content-around flex-wrap bd-highlight mb-3" style="height: 200px">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1233,10 +1085,8 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-around flex-wrap"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="bd-example">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-content-around flex-wrap&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-example">
   <div class="d-flex align-content-stretch flex-wrap bd-highlight mb-3" style="height: 200px">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -1255,44 +1105,261 @@
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-stretch flex-wrap"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">align-content</code>.</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-content-stretch flex-wrap&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>Responsive variations also exist for <code>align-content</code>.</p>
 <ul>
-  <li><code class="highlighter-rouge">.align-content-start</code></li>
-  <li><code class="highlighter-rouge">.align-content-end</code></li>
-  <li><code class="highlighter-rouge">.align-content-center</code></li>
-  <li><code class="highlighter-rouge">.align-content-around</code></li>
-  <li><code class="highlighter-rouge">.align-content-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-content-sm-start</code></li>
-  <li><code class="highlighter-rouge">.align-content-sm-end</code></li>
-  <li><code class="highlighter-rouge">.align-content-sm-center</code></li>
-  <li><code class="highlighter-rouge">.align-content-sm-around</code></li>
-  <li><code class="highlighter-rouge">.align-content-sm-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-content-md-start</code></li>
-  <li><code class="highlighter-rouge">.align-content-md-end</code></li>
-  <li><code class="highlighter-rouge">.align-content-md-center</code></li>
-  <li><code class="highlighter-rouge">.align-content-md-around</code></li>
-  <li><code class="highlighter-rouge">.align-content-md-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-content-lg-start</code></li>
-  <li><code class="highlighter-rouge">.align-content-lg-end</code></li>
-  <li><code class="highlighter-rouge">.align-content-lg-center</code></li>
-  <li><code class="highlighter-rouge">.align-content-lg-around</code></li>
-  <li><code class="highlighter-rouge">.align-content-lg-stretch</code></li>
-  <li><code class="highlighter-rouge">.align-content-xl-start</code></li>
-  <li><code class="highlighter-rouge">.align-content-xl-end</code></li>
-  <li><code class="highlighter-rouge">.align-content-xl-center</code></li>
-  <li><code class="highlighter-rouge">.align-content-xl-around</code></li>
-  <li><code class="highlighter-rouge">.align-content-xl-stretch</code></li>
+<li><code>.align-content-start</code></li>
+<li><code>.align-content-end</code></li>
+<li><code>.align-content-center</code></li>
+<li><code>.align-content-around</code></li>
+<li><code>.align-content-stretch</code></li>
+<li><code>.align-content-sm-start</code></li>
+<li><code>.align-content-sm-end</code></li>
+<li><code>.align-content-sm-center</code></li>
+<li><code>.align-content-sm-around</code></li>
+<li><code>.align-content-sm-stretch</code></li>
+<li><code>.align-content-md-start</code></li>
+<li><code>.align-content-md-end</code></li>
+<li><code>.align-content-md-center</code></li>
+<li><code>.align-content-md-around</code></li>
+<li><code>.align-content-md-stretch</code></li>
+<li><code>.align-content-lg-start</code></li>
+<li><code>.align-content-lg-end</code></li>
+<li><code>.align-content-lg-center</code></li>
+<li><code>.align-content-lg-around</code></li>
+<li><code>.align-content-lg-stretch</code></li>
+<li><code>.align-content-xl-start</code></li>
+<li><code>.align-content-xl-end</code></li>
+<li><code>.align-content-xl-center</code></li>
+<li><code>.align-content-xl-around</code></li>
+<li><code>.align-content-xl-stretch</code></li>
+<li><code>.align-content-xxl-start</code></li>
+<li><code>.align-content-xxl-end</code></li>
+<li><code>.align-content-xxl-center</code></li>
+<li><code>.align-content-xxl-around</code></li>
+<li><code>.align-content-xxl-stretch</code></li>
 </ul>
 
-        </main>
+<h2 id="media-object">Media object</h2>
+<p>Looking to replicate the <a href="../../../4.6/components/media-object/index.html">media object component</a> from Bootstrap 4? Recreate it in no time with a few flex utilities that allow even more flexibility and customization than before.</p>
+<div class="bd-example">
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <svg class="bd-placeholder-img" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e5e5e5"/><text x="50%" y="50%" fill="#999" dy=".3em">Image</text></svg>
+
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;flex-shrink-0&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;flex-grow-1 ms-3&#34;</span><span class="p">&gt;</span>
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>And say you want to vertically center the content next to the image:</p>
+<div class="bd-example">
+<div class="d-flex align-items-center">
+  <div class="flex-shrink-0">
+    <svg class="bd-placeholder-img" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e5e5e5"/><text x="50%" y="50%" fill="#999" dy=".3em">Image</text></svg>
+
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;flex-shrink-0&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;flex-grow-1 ms-3&#34;</span><span class="p">&gt;</span>
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="sass">Sass</h2>
+<h3 id="utilities-api">Utilities API</h3>
+<p>Flexbox utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="../api/index.html#using-the-api">Learn how to use the utilities API.</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss">    <span class="s2">&#34;flex&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">flex</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span><span class="nt">fill</span><span class="nd">:</span> <span class="nt">1</span> <span class="nt">1</span> <span class="nt">auto</span><span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;flex-direction&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">flex-direction</span><span class="o">,</span>
+      <span class="nt">class</span><span class="nd">:</span> <span class="nt">flex</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="nt">row</span> <span class="nt">column</span> <span class="nt">row-reverse</span> <span class="nt">column-reverse</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;flex-grow&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">flex-grow</span><span class="o">,</span>
+      <span class="nt">class</span><span class="nd">:</span> <span class="nt">flex</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">grow-0</span><span class="nd">:</span> <span class="nt">0</span><span class="o">,</span>
+        <span class="nt">grow-1</span><span class="nd">:</span> <span class="nt">1</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;flex-shrink&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">flex-shrink</span><span class="o">,</span>
+      <span class="nt">class</span><span class="nd">:</span> <span class="nt">flex</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">shrink-0</span><span class="nd">:</span> <span class="nt">0</span><span class="o">,</span>
+        <span class="nt">shrink-1</span><span class="nd">:</span> <span class="nt">1</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;flex-wrap&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">flex-wrap</span><span class="o">,</span>
+      <span class="nt">class</span><span class="nd">:</span> <span class="nt">flex</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="nt">wrap</span> <span class="nt">nowrap</span> <span class="nt">wrap-reverse</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;gap&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">gap</span><span class="o">,</span>
+      <span class="nt">class</span><span class="nd">:</span> <span class="nt">gap</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;justify-content&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">justify-content</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">start</span><span class="nd">:</span> <span class="nt">flex-start</span><span class="o">,</span>
+        <span class="nt">end</span><span class="nd">:</span> <span class="nt">flex-end</span><span class="o">,</span>
+        <span class="nt">center</span><span class="nd">:</span> <span class="nt">center</span><span class="o">,</span>
+        <span class="nt">between</span><span class="nd">:</span> <span class="nt">space-between</span><span class="o">,</span>
+        <span class="nt">around</span><span class="nd">:</span> <span class="nt">space-around</span><span class="o">,</span>
+        <span class="nt">evenly</span><span class="nd">:</span> <span class="nt">space-evenly</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;align-items&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">align-items</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">start</span><span class="nd">:</span> <span class="nt">flex-start</span><span class="o">,</span>
+        <span class="nt">end</span><span class="nd">:</span> <span class="nt">flex-end</span><span class="o">,</span>
+        <span class="nt">center</span><span class="nd">:</span> <span class="nt">center</span><span class="o">,</span>
+        <span class="nt">baseline</span><span class="nd">:</span> <span class="nt">baseline</span><span class="o">,</span>
+        <span class="nt">stretch</span><span class="nd">:</span> <span class="nt">stretch</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;align-content&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">align-content</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">start</span><span class="nd">:</span> <span class="nt">flex-start</span><span class="o">,</span>
+        <span class="nt">end</span><span class="nd">:</span> <span class="nt">flex-end</span><span class="o">,</span>
+        <span class="nt">center</span><span class="nd">:</span> <span class="nt">center</span><span class="o">,</span>
+        <span class="nt">between</span><span class="nd">:</span> <span class="nt">space-between</span><span class="o">,</span>
+        <span class="nt">around</span><span class="nd">:</span> <span class="nt">space-around</span><span class="o">,</span>
+        <span class="nt">stretch</span><span class="nd">:</span> <span class="nt">stretch</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;align-self&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">align-self</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">,</span>
+        <span class="nt">start</span><span class="nd">:</span> <span class="nt">flex-start</span><span class="o">,</span>
+        <span class="nt">end</span><span class="nd">:</span> <span class="nt">flex-end</span><span class="o">,</span>
+        <span class="nt">center</span><span class="nd">:</span> <span class="nt">center</span><span class="o">,</span>
+        <span class="nt">baseline</span><span class="nd">:</span> <span class="nt">baseline</span><span class="o">,</span>
+        <span class="nt">stretch</span><span class="nd">:</span> <span class="nt">stretch</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">),</span>
+    <span class="s2">&#34;order&#34;</span><span class="nd">:</span> <span class="o">(</span>
+      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+      <span class="nt">property</span><span class="nd">:</span> <span class="nt">order</span><span class="o">,</span>
+      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
+        <span class="nt">first</span><span class="nd">:</span> <span class="o">-</span><span class="nt">1</span><span class="o">,</span>
+        <span class="nt">0</span><span class="nd">:</span> <span class="nt">0</span><span class="o">,</span>
+        <span class="nt">1</span><span class="nd">:</span> <span class="nt">1</span><span class="o">,</span>
+        <span class="nt">2</span><span class="nd">:</span> <span class="nt">2</span><span class="o">,</span>
+        <span class="nt">3</span><span class="nd">:</span> <span class="nt">3</span><span class="o">,</span>
+        <span class="nt">4</span><span class="nd">:</span> <span class="nt">4</span><span class="o">,</span>
+        <span class="nt">5</span><span class="nd">:</span> <span class="nt">5</span><span class="o">,</span>
+        <span class="nt">last</span><span class="nd">:</span> <span class="nt">6</span><span class="o">,</span>
+      <span class="o">),</span>
+    <span class="o">),</span>
+    </code></pre></div>
+
+      </div>
+    </main>
+  </div>
+
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="../../../../index.html" aria-label="Bootstrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+          <span class="fs-5">Bootstrap</span>
+        </a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Designed and built with all the love in the world by the <a href="../../about/team/index.html">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+          <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+          <li class="mb-2">Currently v5.1.3.</li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="../../../../index.html">Home</a></li>
+          <li class="mb-2"><a href="../../index.html">Docs</a></li>
+          <li class="mb-2"><a href="../../examples/index.html">Examples</a></li>
+          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="../../getting-started/index.html">Getting started</a></li>
+          <li class="mb-2"><a href="../../examples/starter-template/index.html">Starter template</a></li>
+          <li class="mb-2"><a href="../../getting-started/webpack/index.html">Webpack</a></li>
+          <li class="mb-2"><a href="../../getting-started/parcel/index.html">Parcel</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Projects</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Community</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+          <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
+          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+        </ul>
       </div>
     </div>
+  </div>
+</footer>
 
-    <script src="../../assets/js/vendor/jquery.slim.min.js" ></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js" ></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="../../assets/js/docs.min.js"></script>
+
+
+
 
   </body>
+
+<!-- Mirrored from getbootstrap.com/docs/5.1/utilities/flex/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Feb 2022 18:03:55 GMT -->
 </html>

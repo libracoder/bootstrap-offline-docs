@@ -1,676 +1,622 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<!-- Mirrored from getbootstrap.com/docs/5.1/getting-started/javascript/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Feb 2022 18:03:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Jekyll v3.8.6">
+<meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
-<meta name="docsearch:version" content="4.4">
+<meta name="docsearch:version" content="5.1">
 
-<title>JavaScript · Bootstrap</title>
+<title>JavaScript · Bootstrap v5.1</title>
 
-<link rel="canonical" href="../../getting-started/javascript/">
+<link rel="canonical" href="index.html">
+
+
 
 <!-- Bootstrap core CSS -->
 <link href="../../dist/css/bootstrap.min.css" rel="stylesheet" >
-<!-- Documentation extras -->
 
+<link href="../../assets/css/docs.css" rel="stylesheet">
 
-
-
-<link href="../../assets/css/docs.min.css" rel="stylesheet"><!-- Favicons -->
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="../../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="../../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="../../assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="../../assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
 <link rel="icon" href="../../assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="../../assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+<meta name="theme-color" content="#7952b3">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description" content="Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.">
-<meta name="twitter:image" content="../../assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:description" content="Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
+<meta name="twitter:image" content="../../assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="../../getting-started/javascript/">
+<meta property="og:url" content="index.html">
 <meta property="og:title" content="JavaScript">
-<meta property="og:description" content="Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="http://getbootstrap.com../../assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="../../assets/brand/bootstrap-social.png">
+<meta property="og:description" content="Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="../../assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
 
 
 
   </head>
   <body>
-    <a class="skippy sr-only sr-only-focusable" href="#content">
-  <span class="skippy-text">Skip to main content</span>
-</a>
-
-
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-   <a class="navbar-brand mr-0 mr-md-2" href="../../index.html" aria-label="Bootstrap"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="d-block" viewBox="0 0 612 612" role="img" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg></a>
-
-  <div class="navbar-nav-scroll">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item">
-        <a class="nav-link " href="../../index.html" >Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="../../getting-started/introduction/index.html" >Documentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="../../examples/index.html" >Examples</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://icons.getbootstrap.com/">Icons</a>
-      </li>
-
-    </ul>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
   </div>
+</div>
 
-  <ul class="navbar-nav ml-md-auto">
-     <li class="nav-item">
-      <a class="nav-link btn-outline-warning text-warning namelink" id="namelink">
-        <strong onclick="window.open('https://www.buymeacoffee.com/libracoder');
-        "> Your support is my biggest encouragement! - Libracoder</strong> </a>
-       <style type="text/css">
-         .namelink,#namelink {
-           color: #ffc107 !important;
-           cursor: pointer;
-         }
-       </style>
-    </li><li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        v4.4
-      </a>
-      <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
-        <a class="dropdown-item active" href="../../">Latest (4.4.x)</a>
-        <a class="dropdown-item" href="/docs/4.3/">v4.3.1</a>
-        <a class="dropdown-item" href="/docs/4.2/">v4.2.1</a>
-        <a class="dropdown-item" href="/docs/4.0/">v4.0.0</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
-        <a class="dropdown-item" href="/docs/3.4/">v3.4.1</a>
-        <a class="dropdown-item" href="/docs/3.3/">v3.3.7</a>
-        <a class="dropdown-item" href="/2.3.2/">v2.3.2</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/docs/versions/">All versions</a>
-      </div>
-    </li>
 
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img" focusable="false"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img" focusable="false"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener" aria-label="Slack"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 512" role="img" focusable="false"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://opencollective.com/bootstrap/" target="_blank" rel="noopener" aria-label="Open Collective"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img" focusable="false"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg></a>
-    </li>
-  </ul>
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+    <a class="navbar-brand p-0 me-2" href="../../../../index.html" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+    </a>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="../../getting-started/download/index.html">Download</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="../../../../index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 active" aria-current="true" href="../introduction/index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="../../examples/index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        </li>
+      </ul>
+
+      <hr class="d-md-none text-white-50">
+
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://github.com/twbs" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+            <small class="d-md-none ms-2">GitHub</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
+            <small class="d-md-none ms-2">Twitter</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 512" role="img"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg>
+            <small class="d-md-none ms-2">Slack</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg>
+            <small class="d-md-none ms-2">Open Collective</small>
+          </a>
+        </li>
+      </ul>
+
+      <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3" href="../download/index.html">Download</a>
+    </div>
+  </nav>
 </header>
 
 
-    <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
-        <div class="col-md-3 col-xl-2 bd-sidebar">
-          <form role="search" class="bd-search d-flex align-items-center">
-  <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.4">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg></button>
-</form>
 
-<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation"><div class="bd-toc-item active">
-      <a class="bd-toc-link" href="../../getting-started/introduction/index.html">
-        Getting started
-      </a>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../getting-started/introduction/index.html">
-              Introduction
-            </a>
-          </li><li>
-            <a href="../../getting-started/download/index.html">
-              Download
-            </a>
-          </li><li>
-            <a href="../../getting-started/contents/index.html">
-              Contents
-            </a>
-          </li><li>
-            <a href="../../getting-started/browsers-devices/index.html">
-              Browsers & devices
-            </a>
-          </li><li class="active bd-sidenav-active">
-            <a href="../../getting-started/javascript/index.html">
-              JavaScript
-            </a>
-          </li><li>
-            <a href="../../getting-started/theming/index.html">
-              Theming
-            </a>
-          </li><li>
-            <a href="../../getting-started/build-tools/index.html">
-              Build tools
-            </a>
-          </li><li>
-            <a href="../../getting-started/webpack/index.html">
-              Webpack
-            </a>
-          </li><li>
-            <a href="../../getting-started/accessibility/index.html">
-              Accessibility
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../layout/overview/index.html">
-        Layout
-      </a>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../layout/overview/index.html">
-              Overview
-            </a>
-          </li><li>
-            <a href="../../layout/grid/index.html">
-              Grid
-            </a>
-          </li><li>
-            <a href="../../layout/utilities-for-layout/index.html">
-              Utilities for layout
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../content/reboot/index.html">
-        Content
-      </a>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../content/reboot/index.html">
-              Reboot
-            </a>
-          </li><li>
-            <a href="../../content/typography/index.html">
-              Typography
-            </a>
-          </li><li>
-            <a href="../../content/code/index.html">
-              Code
-            </a>
-          </li><li>
-            <a href="../../content/images/index.html">
-              Images
-            </a>
-          </li><li>
-            <a href="../../content/tables/index.html">
-              Tables
-            </a>
-          </li><li>
-            <a href="../../content/figures/index.html">
-              Figures
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../components/alerts/index.html">
-        Components
-      </a>
+  <div class="container-xxl my-md-4 bd-layout">
+    <aside class="bd-sidebar">
+      <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">
+          Getting started
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../components/alerts/index.html">
-              Alerts
-            </a>
-          </li><li>
-            <a href="../../components/badge/index.html">
-              Badge
-            </a>
-          </li><li>
-            <a href="../../components/breadcrumb/index.html">
-              Breadcrumb
-            </a>
-          </li><li>
-            <a href="../../components/buttons/index.html">
-              Buttons
-            </a>
-          </li><li>
-            <a href="../../components/button-group/index.html">
-              Button group
-            </a>
-          </li><li>
-            <a href="../../components/card/index.html">
-              Card
-            </a>
-          </li><li>
-            <a href="../../components/carousel/index.html">
-              Carousel
-            </a>
-          </li><li>
-            <a href="../../components/collapse/index.html">
-              Collapse
-            </a>
-          </li><li>
-            <a href="../../components/dropdowns/index.html">
-              Dropdowns
-            </a>
-          </li><li>
-            <a href="../../components/forms/index.html">
-              Forms
-            </a>
-          </li><li>
-            <a href="../../components/input-group/index.html">
-              Input group
-            </a>
-          </li><li>
-            <a href="../../components/jumbotron/index.html">
-              Jumbotron
-            </a>
-          </li><li>
-            <a href="../../components/list-group/index.html">
-              List group
-            </a>
-          </li><li>
-            <a href="../../components/media-object/index.html">
-              Media object
-            </a>
-          </li><li>
-            <a href="../../components/modal/index.html">
-              Modal
-            </a>
-          </li><li>
-            <a href="../../components/navs/index.html">
-              Navs
-            </a>
-          </li><li>
-            <a href="../../components/navbar/index.html">
-              Navbar
-            </a>
-          </li><li>
-            <a href="../../components/pagination/index.html">
-              Pagination
-            </a>
-          </li><li>
-            <a href="../../components/popovers/index.html">
-              Popovers
-            </a>
-          </li><li>
-            <a href="../../components/progress/index.html">
-              Progress
-            </a>
-          </li><li>
-            <a href="../../components/scrollspy/index.html">
-              Scrollspy
-            </a>
-          </li><li>
-            <a href="../../components/spinners/index.html">
-              Spinners
-            </a>
-          </li><li>
-            <a href="../../components/toasts/index.html">
-              Toasts
-            </a>
-          </li><li>
-            <a href="../../components/tooltips/index.html">
-              Tooltips
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../utilities/borders/index.html">
-        Utilities
-      </a>
+        <div class="collapse show" id="getting-started-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../introduction/index.html" class="d-inline-flex align-items-center rounded">Introduction</a></li>
+              <li><a href="../download/index.html" class="d-inline-flex align-items-center rounded">Download</a></li>
+              <li><a href="../contents/index.html" class="d-inline-flex align-items-center rounded">Contents</a></li>
+              <li><a href="../browsers-devices/index.html" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
+              <li><a href="index.html" class="d-inline-flex align-items-center rounded active" aria-current="page">JavaScript</a></li>
+              <li><a href="../webpack/index.html" class="d-inline-flex align-items-center rounded">Webpack</a></li>
+              <li><a href="../parcel/index.html" class="d-inline-flex align-items-center rounded">Parcel</a></li>
+              <li><a href="../accessibility/index.html" class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+              <li><a href="../rfs/index.html" class="d-inline-flex align-items-center rounded">RFS</a></li>
+              <li><a href="../rtl/index.html" class="d-inline-flex align-items-center rounded">RTL</a></li>
+              <li><a href="../contribute/index.html" class="d-inline-flex align-items-center rounded">Contribute</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+          Customize
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../utilities/borders/index.html">
-              Borders
-            </a>
-          </li><li>
-            <a href="../../utilities/clearfix/index.html">
-              Clearfix
-            </a>
-          </li><li>
-            <a href="../../utilities/close-icon/index.html">
-              Close icon
-            </a>
-          </li><li>
-            <a href="../../utilities/colors/index.html">
-              Colors
-            </a>
-          </li><li>
-            <a href="../../utilities/display/index.html">
-              Display
-            </a>
-          </li><li>
-            <a href="../../utilities/embed/index.html">
-              Embed
-            </a>
-          </li><li>
-            <a href="../../utilities/flex/index.html">
-              Flex
-            </a>
-          </li><li>
-            <a href="../../utilities/float/index.html">
-              Float
-            </a>
-          </li><li>
-            <a href="../../utilities/image-replacement/index.html">
-              Image replacement
-            </a>
-          </li><li>
-            <a href="../../utilities/overflow/index.html">
-              Overflow
-            </a>
-          </li><li>
-            <a href="../../utilities/position/index.html">
-              Position
-            </a>
-          </li><li>
-            <a href="../../utilities/screen-readers/index.html">
-              Screen readers
-            </a>
-          </li><li>
-            <a href="../../utilities/shadows/index.html">
-              Shadows
-            </a>
-          </li><li>
-            <a href="../../utilities/sizing/index.html">
-              Sizing
-            </a>
-          </li><li>
-            <a href="../../utilities/spacing/index.html">
-              Spacing
-            </a>
-          </li><li>
-            <a href="../../utilities/stretched-link/index.html">
-              Stretched link
-            </a>
-          </li><li>
-            <a href="../../utilities/text/index.html">
-              Text
-            </a>
-          </li><li>
-            <a href="../../utilities/vertical-align/index.html">
-              Vertical align
-            </a>
-          </li><li>
-            <a href="../../utilities/visibility/index.html">
-              Visibility
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../extend/approach/index.html">
-        Extend
-      </a>
+        <div class="collapse" id="customize-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../customize/overview/index.html" class="d-inline-flex align-items-center rounded">Overview</a></li>
+              <li><a href="../../customize/sass/index.html" class="d-inline-flex align-items-center rounded">Sass</a></li>
+              <li><a href="../../customize/options/index.html" class="d-inline-flex align-items-center rounded">Options</a></li>
+              <li><a href="../../customize/color/index.html" class="d-inline-flex align-items-center rounded">Color</a></li>
+              <li><a href="../../customize/components/index.html" class="d-inline-flex align-items-center rounded">Components</a></li>
+              <li><a href="../../customize/css-variables/index.html" class="d-inline-flex align-items-center rounded">CSS variables</a></li>
+              <li><a href="../../customize/optimize/index.html" class="d-inline-flex align-items-center rounded">Optimize</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+          Layout
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../extend/approach/index.html">
-              Approach
-            </a>
-          </li><li>
-            <a href="../../extend/icons/index.html">
-              Icons
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../migration/index.html">
-        Migration
-      </a>
+        <div class="collapse" id="layout-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../layout/breakpoints/index.html" class="d-inline-flex align-items-center rounded">Breakpoints</a></li>
+              <li><a href="../../layout/containers/index.html" class="d-inline-flex align-items-center rounded">Containers</a></li>
+              <li><a href="../../layout/grid/index.html" class="d-inline-flex align-items-center rounded">Grid</a></li>
+              <li><a href="../../layout/columns/index.html" class="d-inline-flex align-items-center rounded">Columns</a></li>
+              <li><a href="../../layout/gutters/index.html" class="d-inline-flex align-items-center rounded">Gutters</a></li>
+              <li><a href="../../layout/utilities/index.html" class="d-inline-flex align-items-center rounded">Utilities</a></li>
+              <li><a href="../../layout/z-index/index.html" class="d-inline-flex align-items-center rounded">Z-index</a></li>
+              <li><a href="../../layout/css-grid/index.html" class="d-inline-flex align-items-center rounded">CSS Grid</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-expanded="false">
+          Content
+        </button>
 
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="../../about/overview/index.html">
-        About
-      </a>
+        <div class="collapse" id="content-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../content/reboot/index.html" class="d-inline-flex align-items-center rounded">Reboot</a></li>
+              <li><a href="../../content/typography/index.html" class="d-inline-flex align-items-center rounded">Typography</a></li>
+              <li><a href="../../content/images/index.html" class="d-inline-flex align-items-center rounded">Images</a></li>
+              <li><a href="../../content/tables/index.html" class="d-inline-flex align-items-center rounded">Tables</a></li>
+              <li><a href="../../content/figures/index.html" class="d-inline-flex align-items-center rounded">Figures</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+          Forms
+        </button>
 
-      <ul class="nav bd-sidenav"><li>
-            <a href="../../about/overview/index.html">
-              Overview
-            </a>
-          </li><li>
-            <a href="../../about/team/index.html">
-              Team
-            </a>
-          </li><li>
-            <a href="../../about/brand/index.html">
-              Brand
-            </a>
-          </li><li>
-            <a href="../../about/license/index.html">
-              License
-            </a>
-          </li><li>
-            <a href="../../about/translations/index.html">
-              Translations
-            </a>
-          </li></ul>
-    </div></nav>
+        <div class="collapse" id="forms-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../forms/overview/index.html" class="d-inline-flex align-items-center rounded">Overview</a></li>
+              <li><a href="../../forms/form-control/index.html" class="d-inline-flex align-items-center rounded">Form control</a></li>
+              <li><a href="../../forms/select/index.html" class="d-inline-flex align-items-center rounded">Select</a></li>
+              <li><a href="../../forms/checks-radios/index.html" class="d-inline-flex align-items-center rounded">Checks &amp; radios</a></li>
+              <li><a href="../../forms/range/index.html" class="d-inline-flex align-items-center rounded">Range</a></li>
+              <li><a href="../../forms/input-group/index.html" class="d-inline-flex align-items-center rounded">Input group</a></li>
+              <li><a href="../../forms/floating-labels/index.html" class="d-inline-flex align-items-center rounded">Floating labels</a></li>
+              <li><a href="../../forms/layout/index.html" class="d-inline-flex align-items-center rounded">Layout</a></li>
+              <li><a href="../../forms/validation/index.html" class="d-inline-flex align-items-center rounded">Validation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+          Components
+        </button>
 
+        <div class="collapse" id="components-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../components/accordion/index.html" class="d-inline-flex align-items-center rounded">Accordion</a></li>
+              <li><a href="../../components/alerts/index.html" class="d-inline-flex align-items-center rounded">Alerts</a></li>
+              <li><a href="../../components/badge/index.html" class="d-inline-flex align-items-center rounded">Badge</a></li>
+              <li><a href="../../components/breadcrumb/index.html" class="d-inline-flex align-items-center rounded">Breadcrumb</a></li>
+              <li><a href="../../components/buttons/index.html" class="d-inline-flex align-items-center rounded">Buttons</a></li>
+              <li><a href="../../components/button-group/index.html" class="d-inline-flex align-items-center rounded">Button group</a></li>
+              <li><a href="../../components/card/index.html" class="d-inline-flex align-items-center rounded">Card</a></li>
+              <li><a href="../../components/carousel/index.html" class="d-inline-flex align-items-center rounded">Carousel</a></li>
+              <li><a href="../../components/close-button/index.html" class="d-inline-flex align-items-center rounded">Close button</a></li>
+              <li><a href="../../components/collapse/index.html" class="d-inline-flex align-items-center rounded">Collapse</a></li>
+              <li><a href="../../components/dropdowns/index.html" class="d-inline-flex align-items-center rounded">Dropdowns</a></li>
+              <li><a href="../../components/list-group/index.html" class="d-inline-flex align-items-center rounded">List group</a></li>
+              <li><a href="../../components/modal/index.html" class="d-inline-flex align-items-center rounded">Modal</a></li>
+              <li><a href="../../components/navs-tabs/index.html" class="d-inline-flex align-items-center rounded">Navs &amp; tabs</a></li>
+              <li><a href="../../components/navbar/index.html" class="d-inline-flex align-items-center rounded">Navbar</a></li>
+              <li><a href="../../components/offcanvas/index.html" class="d-inline-flex align-items-center rounded">Offcanvas</a></li>
+              <li><a href="../../components/pagination/index.html" class="d-inline-flex align-items-center rounded">Pagination</a></li>
+              <li><a href="../../components/placeholders/index.html" class="d-inline-flex align-items-center rounded">Placeholders</a></li>
+              <li><a href="../../components/popovers/index.html" class="d-inline-flex align-items-center rounded">Popovers</a></li>
+              <li><a href="../../components/progress/index.html" class="d-inline-flex align-items-center rounded">Progress</a></li>
+              <li><a href="../../components/scrollspy/index.html" class="d-inline-flex align-items-center rounded">Scrollspy</a></li>
+              <li><a href="../../components/spinners/index.html" class="d-inline-flex align-items-center rounded">Spinners</a></li>
+              <li><a href="../../components/toasts/index.html" class="d-inline-flex align-items-center rounded">Toasts</a></li>
+              <li><a href="../../components/tooltips/index.html" class="d-inline-flex align-items-center rounded">Tooltips</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#helpers-collapse" aria-expanded="false">
+          Helpers
+        </button>
+
+        <div class="collapse" id="helpers-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../helpers/clearfix/index.html" class="d-inline-flex align-items-center rounded">Clearfix</a></li>
+              <li><a href="../../helpers/colored-links/index.html" class="d-inline-flex align-items-center rounded">Colored links</a></li>
+              <li><a href="../../helpers/ratio/index.html" class="d-inline-flex align-items-center rounded">Ratio</a></li>
+              <li><a href="../../helpers/position/index.html" class="d-inline-flex align-items-center rounded">Position</a></li>
+              <li><a href="../../helpers/stacks/index.html" class="d-inline-flex align-items-center rounded">Stacks</a></li>
+              <li><a href="../../helpers/visually-hidden/index.html" class="d-inline-flex align-items-center rounded">Visually hidden</a></li>
+              <li><a href="../../helpers/stretched-link/index.html" class="d-inline-flex align-items-center rounded">Stretched link</a></li>
+              <li><a href="../../helpers/text-truncation/index.html" class="d-inline-flex align-items-center rounded">Text truncation</a></li>
+              <li><a href="../../helpers/vertical-rule/index.html" class="d-inline-flex align-items-center rounded">Vertical rule</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#utilities-collapse" aria-expanded="false">
+          Utilities
+        </button>
+
+        <div class="collapse" id="utilities-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../utilities/api/index.html" class="d-inline-flex align-items-center rounded">API</a></li>
+              <li><a href="../../utilities/background/index.html" class="d-inline-flex align-items-center rounded">Background</a></li>
+              <li><a href="../../utilities/borders/index.html" class="d-inline-flex align-items-center rounded">Borders</a></li>
+              <li><a href="../../utilities/colors/index.html" class="d-inline-flex align-items-center rounded">Colors</a></li>
+              <li><a href="../../utilities/display/index.html" class="d-inline-flex align-items-center rounded">Display</a></li>
+              <li><a href="../../utilities/flex/index.html" class="d-inline-flex align-items-center rounded">Flex</a></li>
+              <li><a href="../../utilities/float/index.html" class="d-inline-flex align-items-center rounded">Float</a></li>
+              <li><a href="../../utilities/interactions/index.html" class="d-inline-flex align-items-center rounded">Interactions</a></li>
+              <li><a href="../../utilities/opacity/index.html" class="d-inline-flex align-items-center rounded">Opacity</a></li>
+              <li><a href="../../utilities/overflow/index.html" class="d-inline-flex align-items-center rounded">Overflow</a></li>
+              <li><a href="../../utilities/position/index.html" class="d-inline-flex align-items-center rounded">Position</a></li>
+              <li><a href="../../utilities/shadows/index.html" class="d-inline-flex align-items-center rounded">Shadows</a></li>
+              <li><a href="../../utilities/sizing/index.html" class="d-inline-flex align-items-center rounded">Sizing</a></li>
+              <li><a href="../../utilities/spacing/index.html" class="d-inline-flex align-items-center rounded">Spacing</a></li>
+              <li><a href="../../utilities/text/index.html" class="d-inline-flex align-items-center rounded">Text</a></li>
+              <li><a href="../../utilities/vertical-align/index.html" class="d-inline-flex align-items-center rounded">Vertical align</a></li>
+              <li><a href="../../utilities/visibility/index.html" class="d-inline-flex align-items-center rounded">Visibility</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#extend-collapse" aria-expanded="false">
+          Extend
+        </button>
+
+        <div class="collapse" id="extend-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../extend/approach/index.html" class="d-inline-flex align-items-center rounded">Approach</a></li>
+              <li><a href="../../extend/icons/index.html" class="d-inline-flex align-items-center rounded">Icons</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="false">
+          About
+        </button>
+
+        <div class="collapse" id="about-collapse">
+          <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="../../about/overview/index.html" class="d-inline-flex align-items-center rounded">Overview</a></li>
+              <li><a href="../../about/team/index.html" class="d-inline-flex align-items-center rounded">Team</a></li>
+              <li><a href="../../about/brand/index.html" class="d-inline-flex align-items-center rounded">Brand</a></li>
+              <li><a href="../../about/license/index.html" class="d-inline-flex align-items-center rounded">License</a></li>
+              <li><a href="../../about/translations/index.html" class="d-inline-flex align-items-center rounded">Translations</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="my-3 mx-4 border-top"></li>
+      <li>
+        <a href="../../migration/index.html" class="d-inline-flex align-items-center rounded">
+          Migration
+        </a>
+      </li>
+  </ul>
+</nav>
+
+    </aside>
+
+    <main class="bd-main order-1">
+      <div class="bd-intro ps-lg-4">
+        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+          <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/twbs/bootstrap/blob/main/site/content/docs/5.1/getting-started/javascript.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+          <h1 class="bd-title" id="content">JavaScript</h1>
+        </div>
+        <p class="bd-lead">Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
+        <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&amp;placement=getbootstrapcom" id="_carbonads_js"></script>
+
+      </div>
+
+
+        <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+          <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#individual-or-compiled">Individual or compiled</a></li>
+    <li><a href="#using-bootstrap-as-a-module">Using Bootstrap as a module</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
+    <li><a href="#still-want-to-use-jquery-its-possible">Still want to use jQuery? It&rsquo;s possible!</a></li>
+    <li><a href="#data-attributes">Data attributes</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#programmatic-api">Programmatic API</a>
+      <ul>
+        <li><a href="#css-selectors-in-constructors">CSS selectors in constructors</a></li>
+        <li><a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a></li>
+        <li><a href="#default-settings">Default settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#no-conflict-only-if-you-use-jquery">No conflict (only if you use jQuery)</a></li>
+    <li><a href="#version-numbers">Version numbers</a></li>
+    <li><a href="#no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</a></li>
+    <li><a href="#sanitizer">Sanitizer</a></li>
+  </ul>
+</nav>
         </div>
 
 
-          <nav class="d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
-            <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#individual-or-compiled">Individual or compiled</a></li>
-<li class="toc-entry toc-h2"><a href="#dependencies">Dependencies</a></li>
-<li class="toc-entry toc-h2"><a href="#data-attributes">Data attributes</a></li>
-<li class="toc-entry toc-h2"><a href="#events">Events</a></li>
-<li class="toc-entry toc-h2"><a href="#programmatic-api">Programmatic API</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a></li>
-<li class="toc-entry toc-h3"><a href="#default-settings">Default settings</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#no-conflict">No conflict</a></li>
-<li class="toc-entry toc-h2"><a href="#version-numbers">Version numbers</a></li>
-<li class="toc-entry toc-h2"><a href="#no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</a></li>
-<li class="toc-entry toc-h2"><a href="#util">Util</a></li>
-<li class="toc-entry toc-h2"><a href="#sanitizer">Sanitizer</a></li>
-</ul>
-          </nav>
+      <div class="bd-content ps-lg-4">
 
 
-        <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main"> <p class="text-center"> If you <span><img src="../../assets/img/heart-icon.png" style="height: 2rem" alt=""></span> this project, you can buy us a
-              <a href="https://www.buymeacoffee.com/libracoder" target="_blank"><span><img src="../../assets/img/orange+buy+me+a+coffee.jpg" style="height: 2rem" alt=""></span></a> to support us.</p>
-          <h1 class="bd-title" id="content">JavaScript</h1>
-          <p class="bd-lead">Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.</p>
-          <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
+        <h2 id="individual-or-compiled">Individual or compiled</h2>
+<p>Plugins can be included individually (using Bootstrap&rsquo;s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code> (don&rsquo;t include both).</p>
+<p>If you use a bundler (Webpack, Rollup&hellip;), you can use <code>/js/dist/*.js</code> files which are UMD ready.</p>
+<h2 id="using-bootstrap-as-a-module">Using Bootstrap as a module</h2>
+<p>We provide a version of Bootstrap built as <code>ESM</code> (<code>bootstrap.esm.js</code> and <code>bootstrap.esm.min.js</code>) which allows you to use Bootstrap as a module in your browser, if your <a href="https://caniuse.com/es6-module">targeted browsers support it</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span><span class="p">&gt;</span>
+  <span class="kr">import</span> <span class="p">{</span> <span class="nx">Toast</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;bootstrap.esm.min.js&#39;</span>
 
-          <h2 id="individual-or-compiled">Individual or compiled</h2>
-
-<p>Plugins can be included individually (using Bootstrap’s individual <code class="highlighter-rouge">js/dist/*.js</code>), or all at once using <code class="highlighter-rouge">bootstrap.js</code> or the minified <code class="highlighter-rouge">bootstrap.min.js</code> (don’t include both).</p>
-
-<p>If you use a bundler (Webpack, Rollup…), you can use <code class="highlighter-rouge">/js/dist/*.js</code> files which are UMD ready.</p>
+  <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.toast&#39;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">toastNode</span> <span class="p">=&gt;</span> <span class="k">new</span> <span class="nx">Toast</span><span class="p">(</span><span class="nx">toastNode</span><span class="p">))</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><div class="bd-callout bd-callout-warning">
+<h2 id="incompatible-plugins">Incompatible plugins</h2>
+<p>Due to browser limitations, some of our plugins, namely Dropdown, Tooltip and Popover plugins, cannot be used in a <code>&lt;script&gt;</code> tag with <code>module</code> type because they depend on Popper. For more information about the issue see <a href="https://v8.dev/features/modules#specifiers">here</a>.
+</div>
 
 <h2 id="dependencies">Dependencies</h2>
-
-<p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that <strong>all plugins depend on jQuery</strong> (this means jQuery must be included <strong>before</strong> the plugin files). <a href="https://github.com/twbs/bootstrap/blob/v4.4.1/package.json">Consult our <code class="highlighter-rouge">package.json</code></a> to see which versions of jQuery are supported.</p>
-
-<p>Our dropdowns, popovers and tooltips also depend on <a href="https://popper.js.org/">Popper.js</a>.</p>
-
+<p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs.</p>
+<p>Our dropdowns, popovers and tooltips also depend on <a href="https://popper.js.org/">Popper</a>.</p>
+<h2 id="still-want-to-use-jquery-its-possible">Still want to use jQuery? It&rsquo;s possible!</h2>
+<p>Bootstrap 5 is designed to be used without jQuery, but it&rsquo;s still possible to use our components with jQuery. <strong>If Bootstrap detects <code>jQuery</code> in the <code>window</code> object</strong> it&rsquo;ll add all of our components in jQuery&rsquo;s plugin system; this means you&rsquo;ll be able to do <code>$('[data-bs-toggle=&quot;tooltip&quot;]').tooltip()</code> to enable tooltips. The same goes for our other components.</p>
 <h2 id="data-attributes">Data attributes</h2>
-
 <p>Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to <strong>only use one set of data attributes on a single element</strong> (e.g., you cannot trigger a tooltip and modal from the same button.)</p>
-
-<p>However, in some situations it may be desirable to disable this functionality. To disable the data attribute API, unbind all events on the document namespaced with <code class="highlighter-rouge">data-api</code> like so:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">off</span><span class="p">(</span><span class="dl">'</span><span class="s1">.data-api</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
-
-<p>Alternatively, to target a specific plugin, just include the plugin’s name as a namespace along with the data-api namespace like this:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">off</span><span class="p">(</span><span class="dl">'</span><span class="s1">.alert.data-api</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
-
 <div class="bd-callout bd-callout-warning">
 <h2 id="selectors">Selectors</h2>
-
-<p>Currently to query DOM elements we use the native methods <code class="highlighter-rouge">querySelector</code> and <code class="highlighter-rouge">querySelectorAll</code> for performance reasons, so you have to use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>.
-If you use special selectors, for example: <code class="highlighter-rouge">collapse:Example</code> be sure to escape them.</p>
+<p>Currently to query DOM elements we use the native methods <code>querySelector</code> and <code>querySelectorAll</code> for performance reasons, so you have to use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>.
+If you use special selectors, for example: <code>collapse:Example</code> be sure to escape them.
 </div>
 
 <h2 id="events">Events</h2>
+<p>Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
+<p>All infinitive events provide <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a> functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call <code>preventDefault()</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myModal</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myModal&#39;</span><span class="p">)</span>
 
-<p>Bootstrap provides custom events for most plugins’ unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code class="highlighter-rouge">show</code>) is triggered at the start of an event, and its past participle form (ex. <code class="highlighter-rouge">shown</code>) is triggered on the completion of an action.</p>
-
-<p>All infinitive events provide <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code class="highlighter-rouge">preventDefault()</code></a> functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call <code class="highlighter-rouge">preventDefault()</code>.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">show.bs.modal</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">myModal</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;show.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// stops modal from being shown</span>
-  <span class="p">}</span>
-<span class="p">})</span></code></pre></figure>
-
-<h2 id="programmatic-api">Programmatic API</h2>
-
-<p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.btn.danger</span><span class="dl">'</span><span class="p">).</span><span class="nx">button</span><span class="p">(</span><span class="dl">'</span><span class="s1">toggle</span><span class="dl">'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">fat</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
-
-<p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">modal</span><span class="p">()</span> <span class="c1">// initialized with defaults</span>
-<span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span> <span class="na">keyboard</span><span class="p">:</span> <span class="kc">false</span> <span class="p">})</span> <span class="c1">// initialized with no keyboard</span>
-<span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="dl">'</span><span class="s1">show</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// initializes and invokes show immediately</span></code></pre></figure>
-
-<p>Each plugin also exposes its raw constructor on a <code class="highlighter-rouge">Constructor</code> property: <code class="highlighter-rouge">$.fn.popover.Constructor</code>. If you’d like to get a particular plugin instance, retrieve it directly from an element: <code class="highlighter-rouge">$('[rel="popover"]').data('popover')</code>.</p>
-
-<h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions</h3>
-
-<p>All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started but <strong>before it ends</strong>.</p>
-
-<p>In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myCollapse</span><span class="dl">'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">shown.bs.collapse</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Action to execute once the collapsible area is expanded</span>
-<span class="p">})</span></code></pre></figure>
-
-<p>In addition a method call on a <strong>transitioning component will be ignored</strong>.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myCarousel</span><span class="dl">'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">slid.bs.carousel</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myCarousel</span><span class="dl">'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// Will slide to the slide 2 as soon as the transition to slide 1 is finished</span>
+    <span class="k">return</span> <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// stops modal from being shown
+</span><span class="c1"></span>  <span class="p">}</span>
 <span class="p">})</span>
-
-<span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myCarousel</span><span class="dl">'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// Will start sliding to the slide 1 and returns to the caller</span>
-<span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myCarousel</span><span class="dl">'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// !! Will be ignored, as the transition to the slide 1 is not finished !!</span></code></pre></figure>
-
-<h3 id="default-settings">Default settings</h3>
-
-<p>You can change the default settings for a plugin by modifying the plugin’s <code class="highlighter-rouge">Constructor.Default</code> object:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// changes default for the modal plugin's `keyboard` option to false</span>
-<span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">modal</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span></code></pre></figure>
-
-<h2 id="no-conflict">No conflict</h2>
-
-<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code class="highlighter-rouge">.noConflict</code> on the plugin you wish to revert the value of.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// return $.fn.button to previously assigned value</span>
-<span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span> <span class="c1">// give $().bootstrapBtn the Bootstrap functionality</span></code></pre></figure>
-
-<h2 id="version-numbers">Version numbers</h2>
-
-<p>The version of each of Bootstrap’s jQuery plugins can be accessed via the <code class="highlighter-rouge">VERSION</code> property of the plugin’s constructor. For example, for the tooltip plugin:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">VERSION</span> <span class="c1">// =&gt; "4.4.1"</span></code></pre></figure>
-
-<h2 id="no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</h2>
-
-<p>Bootstrap’s plugins don’t fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code class="highlighter-rouge">&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
-
-<div class="bd-callout bd-callout-warning">
-<h5 id="third-party-libraries">Third-party libraries</h5>
-
-<p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code class="highlighter-rouge">.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.</p>
+</code></pre></div><div class="bd-callout bd-callout-warning">
+<h2 id="jquery-events">jQuery events</h2>
+<p>Bootstrap will detect jQuery if <code>jQuery</code> is present in the <code>window</code> object and there is no <code>data-bs-no-jquery</code> attribute set on <code>&lt;body&gt;</code>. If jQuery is found, Bootstrap will emit events thanks to jQuery&rsquo;s event system. So if you want to listen to Bootstrap&rsquo;s events, you&rsquo;ll have to use the jQuery methods (<code>.on</code>, <code>.one</code>) instead of <code>addEventListener</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;shown.bs.tab&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// do something...
+</span><span class="c1"></span><span class="p">})</span>
+</code></pre></div>
 </div>
 
-<h2 id="util">Util</h2>
+<h2 id="programmatic-api">Programmatic API</h2>
+<p>All constructors accept an optional options object or nothing (which initiates a plugin with its default behavior):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myModalEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myModal&#39;</span><span class="p">)</span>
 
-<p>All Bootstrap’s JavaScript files depend on <code class="highlighter-rouge">util.js</code> and it has to be included alongside the other JavaScript files. If you’re using the compiled (or minified) <code class="highlighter-rouge">bootstrap.js</code>, there is no need to include this—it’s already there.</p>
+<span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="nx">myModalEl</span><span class="p">)</span> <span class="c1">// initialized with defaults
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="nx">myModalEl</span><span class="p">,</span> <span class="p">{</span> <span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span> <span class="p">})</span> <span class="c1">// initialized with no keyboard
+</span></code></pre></div><p>If you&rsquo;d like to get a particular plugin instance, each plugin exposes a <code>getInstance</code> method. In order to retrieve it directly from an element, do this: <code>bootstrap.Popover.getInstance(myPopoverEl)</code>.</p>
+<h3 id="css-selectors-in-constructors">CSS selectors in constructors</h3>
+<p>You can also use a CSS selector as the first argument instead of a DOM element to initialize the plugin. Currently the element for the plugin is found by the <code>querySelector</code> method since our plugins support a single element only.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">dropdown</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Dropdown</span><span class="p">(</span><span class="s1">&#39;[data-bs-toggle=&#34;dropdown&#34;]&#39;</span><span class="p">)</span>
+</code></pre></div><h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions</h3>
+<p>All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started but <strong>before it ends</strong>.</p>
+<p>In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCollapseEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myCollapse&#39;</span><span class="p">)</span>
 
-<p><code class="highlighter-rouge">util.js</code> includes utility functions and a basic helper for <code class="highlighter-rouge">transitionEnd</code> events as well as a CSS transition emulator. It’s used by the other plugins to check for CSS transition support and to catch hanging transitions.</p>
+<span class="nx">myCollapseEl</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;shown.bs.collapse&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Action to execute once the collapsible area is expanded
+</span><span class="c1"></span><span class="p">})</span>
+</code></pre></div><p>In addition a method call on a <strong>transitioning component will be ignored</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCarouselEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myCarousel&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">carousel</span> <span class="o">=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Carousel</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">(</span><span class="nx">myCarouselEl</span><span class="p">)</span> <span class="c1">// Retrieve a Carousel instance
+</span><span class="c1"></span>
+<span class="nx">myCarouselEl</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;slid.bs.carousel&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// Will slide to the slide 2 as soon as the transition to slide 1 is finished
+</span><span class="c1"></span><span class="p">})</span>
+
+<span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span> <span class="c1">// Will start sliding to the slide 1 and returns to the caller
+</span><span class="c1"></span><span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// !! Will be ignored, as the transition to the slide 1 is not finished !!
+</span></code></pre></div><h3 id="default-settings">Default settings</h3>
+<p>You can change the default settings for a plugin by modifying the plugin&rsquo;s <code>Constructor.Default</code> object:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// changes default for the modal plugin&#39;s `keyboard` option to false
+</span><span class="c1"></span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span>
+</code></pre></div><h2 id="no-conflict-only-if-you-use-jquery">No conflict (only if you use jQuery)</h2>
+<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// return $.fn.button to previously assigned value
+</span><span class="c1"></span><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span> <span class="c1">// give $().bootstrapBtn the Bootstrap functionality
+</span></code></pre></div><h2 id="version-numbers">Version numbers</h2>
+<p>The version of each of Bootstrap&rsquo;s plugins can be accessed via the <code>VERSION</code> property of the plugin&rsquo;s constructor. For example, for the tooltip plugin:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">.</span><span class="nx">VERSION</span> <span class="c1">// =&gt; &#34;5.1.3&#34;
+</span></code></pre></div><h2 id="no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</h2>
+<p>Bootstrap&rsquo;s plugins don&rsquo;t fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
+<div class="bd-callout bd-callout-warning">
+<h5 id="third-party-libraries">Third-party libraries</h5>
+<p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code>.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.
+</div>
 
 <h2 id="sanitizer">Sanitizer</h2>
-
 <p>Tooltips and Popovers use our built-in sanitizer to sanitize options which accept HTML.</p>
+<p>The default <code>allowList</code> value is the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span> <span class="o">=</span> <span class="sr">/^aria-[\w-]*$/i</span>
+<span class="kd">var</span> <span class="nx">DefaultAllowlist</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// Global attributes allowed on any supplied element below.
+</span><span class="c1"></span>  <span class="s1">&#39;*&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;lang&#39;</span><span class="p">,</span> <span class="s1">&#39;role&#39;</span><span class="p">,</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span><span class="p">],</span>
+  <span class="nx">a</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">,</span> <span class="s1">&#39;href&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;rel&#39;</span><span class="p">],</span>
+  <span class="nx">area</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">b</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">br</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">col</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">code</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">div</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">em</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">hr</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h1</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h2</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h3</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h4</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h5</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h6</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">i</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">img</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;srcset&#39;</span><span class="p">,</span> <span class="s1">&#39;alt&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">],</span>
+  <span class="nx">li</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">ol</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">p</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">pre</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">s</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">small</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">span</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">sub</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">sup</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">strong</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">u</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">ul</span><span class="o">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div><p>If you want to add new values to this default <code>allowList</code> you can do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myDefaultAllowList</span> <span class="o">=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">allowList</span>
 
-<p>The default <code class="highlighter-rouge">whiteList</code> value is the following:</p>
+<span class="c1">// To allow table elements
+</span><span class="c1"></span><span class="nx">myDefaultAllowList</span><span class="p">.</span><span class="nx">table</span> <span class="o">=</span> <span class="p">[]</span>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span> <span class="o">=</span> <span class="sr">/^aria-</span><span class="se">[\w</span><span class="sr">-</span><span class="se">]</span><span class="sr">*$/i</span>
-<span class="kd">var</span> <span class="nx">DefaultWhitelist</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="c1">// Global attributes allowed on any supplied element below.</span>
-  <span class="dl">'</span><span class="s1">*</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">class</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">dir</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">id</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">lang</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">role</span><span class="dl">'</span><span class="p">,</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span><span class="p">],</span>
-  <span class="na">a</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">href</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">title</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">rel</span><span class="dl">'</span><span class="p">],</span>
-  <span class="na">area</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">b</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">br</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">col</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">code</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">div</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">em</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">hr</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">h1</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">h2</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">h3</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">h4</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">h5</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">h6</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">i</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">img</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">src</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">alt</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">title</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">width</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">height</span><span class="dl">'</span><span class="p">],</span>
-  <span class="na">li</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">ol</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">p</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">pre</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">s</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">small</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">span</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">sub</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">sup</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">strong</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">u</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="na">ul</span><span class="p">:</span> <span class="p">[]</span>
-<span class="p">}</span></code></pre></figure>
+<span class="c1">// To allow td elements and data-bs-option attributes on td elements
+</span><span class="c1"></span><span class="nx">myDefaultAllowList</span><span class="p">.</span><span class="nx">td</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;data-bs-option&#39;</span><span class="p">]</span>
 
-<p>If you want to add new values to this default <code class="highlighter-rouge">whiteList</code> you can do the following:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myDefaultWhiteList</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">whiteList</span>
-
-<span class="c1">// To allow table elements</span>
-<span class="nx">myDefaultWhiteList</span><span class="p">.</span><span class="nx">table</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1">// To allow td elements and data-option attributes on td elements</span>
-<span class="nx">myDefaultWhiteList</span><span class="p">.</span><span class="nx">td</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">data-option</span><span class="dl">'</span><span class="p">]</span>
-
-<span class="c1">// You can push your custom regex to validate your attributes.</span>
-<span class="c1">// Be careful about your regular expressions being too lax</span>
-<span class="kd">var</span> <span class="nx">myCustomRegex</span> <span class="o">=</span> <span class="sr">/^data-my-app-</span><span class="se">[\w</span><span class="sr">-</span><span class="se">]</span><span class="sr">+/</span>
-<span class="nx">myDefaultWhiteList</span><span class="p">[</span><span class="dl">'</span><span class="s1">*</span><span class="dl">'</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">myCustomRegex</span><span class="p">)</span></code></pre></figure>
-
-<p>If you want to bypass our sanitizer because you prefer to use a dedicated library, for example <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>, you should do the following:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#yourTooltip</span><span class="dl">'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">({</span>
-  <span class="na">sanitizeFn</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// You can push your custom regex to validate your attributes.
+</span><span class="c1">// Be careful about your regular expressions being too lax
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">myCustomRegex</span> <span class="o">=</span> <span class="sr">/^data-my-app-[\w-]+/</span>
+<span class="nx">myDefaultAllowList</span><span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">myCustomRegex</span><span class="p">)</span>
+</code></pre></div><p>If you want to bypass our sanitizer because you prefer to use a dedicated library, for example <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>, you should do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">yourTooltipEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;yourTooltip&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">tooltip</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">(</span><span class="nx">yourTooltipEl</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">sanitizeFn</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">DOMPurify</span><span class="p">.</span><span class="nx">sanitize</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span>
   <span class="p">}</span>
-<span class="p">})</span></code></pre></figure>
+<span class="p">})</span>
+</code></pre></div>
+      </div>
+    </main>
+  </div>
 
 
-        </main>
+    <footer class="bd-footer py-5 mt-5 bg-light">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="../../../../index.html" aria-label="Bootstrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+          <span class="fs-5">Bootstrap</span>
+        </a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Designed and built with all the love in the world by the <a href="../../about/team/index.html">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+          <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+          <li class="mb-2">Currently v5.1.3.</li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="../../../../index.html">Home</a></li>
+          <li class="mb-2"><a href="../../index.html">Docs</a></li>
+          <li class="mb-2"><a href="../../examples/index.html">Examples</a></li>
+          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="../index.html">Getting started</a></li>
+          <li class="mb-2"><a href="../../examples/starter-template/index.html">Starter template</a></li>
+          <li class="mb-2"><a href="../webpack/index.html">Webpack</a></li>
+          <li class="mb-2"><a href="../parcel/index.html">Parcel</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Projects</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Community</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+          <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
+          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+        </ul>
       </div>
     </div>
+  </div>
+</footer>
 
-    <script src="../../assets/js/vendor/jquery.slim.min.js" ></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js" ></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="../../assets/js/docs.min.js"></script>
+
+
+
 
   </body>
+
+<!-- Mirrored from getbootstrap.com/docs/5.1/getting-started/javascript/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Feb 2022 18:03:53 GMT -->
 </html>
