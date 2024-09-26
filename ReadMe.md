@@ -1,8 +1,8 @@
-# Download Bootstrap from 4.4 - 5.1 Offline Documentation
+# Download Bootstrap from 4.4 - 5.3 Offline Documentation
 
 #### Bootstrap5  offline documentation
 
-#### Size : 4mb (max)
+#### Size : 4.52mb (max)
 
 Please dont forget to star this project it if you find it helpful
 
