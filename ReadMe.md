@@ -2,7 +2,7 @@
 
 #### Bootstrap5  offline documentation
 
-#### Size : 4.52mb (max)
+#### Size : 4.73mb (max)
 
 Please dont forget to star this project it if you find it helpful
 
